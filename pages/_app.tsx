@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const p5Script = document.createElement('script')
     p5Script.setAttribute('id', 'p5Script')
-    p5Script.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js')
+    p5Script.setAttribute('src', 'https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js')
     document.getElementsByTagName('head')[0].appendChild(p5Script)
 
     return () => {
