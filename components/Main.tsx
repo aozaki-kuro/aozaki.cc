@@ -25,20 +25,22 @@ const Main = () => {
           priority
         />
       </div>
-      <h1 className="font-bold mb-8 text-5xl heading-text">Aozaki Kuro</h1>
+      <h1 className="font-bold mb-8 text-5xl heading-text">[ Aozaki ]</h1>
 
-      <p className="mb-8 text-lg">
+      <p className="mb-8 text-base md:text-lg">
         <FontAwesomeIcon icon={faStethoscope} /> Doctor / <FontAwesomeIcon icon={faHeartPulse} />{' '}
         Cardiologist / <FontAwesomeIcon icon={faGraduationCap} /> PhD , MMed
       </p>
 
-      <p className="mb-8 text-lg">
-        <FontAwesomeIcon icon={faCameraRetro} /> Part-time photographer /{' '}
+      <p className="mb-8 text-base md:text-lg">
+        <FontAwesomeIcon icon={faCameraRetro} /> Part-time photographer
+      </p>
+      <p className="mb-8 text-base md:text-lg">
         <FontAwesomeIcon icon={faHeadphonesSimple} /> Audiophile / <FontAwesomeIcon icon={faFilm} />{' '}
         Cinephile
       </p>
 
-      <p className="text-lg">
+      <p className="text-base md:text-lg">
         <FontAwesomeIcon icon={faFeatherPointed} />{' '}
         <a href="https://blog.aozaki.cc/" target="_blank" rel="noopener noreferrer">
           My Blog
@@ -55,7 +57,7 @@ const Main = () => {
         </a>
       </p>
 
-      <p className="mt-8 flex space-x-2 items-center text-lg">
+      <p className="mt-8 flex space-x-2 items-center text-base md:text-lg">
         <Mail size={15} />
         <a href="mailto:aozaki.blog@gmail.com">aozaki.blog#gmail.com</a>
       </p>
