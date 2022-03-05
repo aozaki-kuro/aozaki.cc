@@ -47,11 +47,12 @@ button {
 
 .dotback2 {
   background-color: #111729;
-  background-image: radial-gradient(#e2c48d6c 1%, transparent 0), radial-gradient(#e2c48d6c 1%, transparent 0);
+  background-image: radial-gradient(#e2c48d6c 1%, transparent 0),
+    radial-gradient(#e2c48d6c 1%, transparent 0);
   background-size: 80px 80px;
   background-position: 0 0, 160px 160px;
 }
 
 .fontborder {
-  text-shadow: 0px 0px 20px #111729
+  text-shadow: 0px 0px 20px #111729;
 }
