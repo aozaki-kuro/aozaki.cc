@@ -14,7 +14,6 @@ specifiers:
   eslint-config-next: ^12.0.8
   next: ^12.0.9
   next-themes: ^0.0.15
-  nextjs-progressbar: ^0.0.13
   prettier: ^2.5.1
   probe-image-size: ^7.2.2
   prop-types: 15.8.1
@@ -33,7 +32,6 @@ dependencies:
   '@icons-pack/react-simple-icons': 4.6.1_react@17.0.2
   next: 12.0.10_react-dom@17.0.2+react@17.0.2
   next-themes: 0.0.15_61390be992b634a688f7c2555547b55b
-  nextjs-progressbar: 0.0.13_next@12.0.10+react@17.0.2
   prettier: 2.5.1
   probe-image-size: 7.2.3
   prop-types: 15.8.1
@@ -1468,22 +1466,6 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
-    dev: false
-
-  /nextjs-progressbar/0.0.13_next@12.0.10+react@17.0.2:
-    resolution: {integrity: sha512-vuE9/j1yaFyHhMVwdlPZbGbcwnvoZZMH8fXUG+HCa+w5uojRNOMO43EL+o9YZ53QwQHsjWdfUapz+J8D/u3jFw==}
-    peerDependencies:
-      next: '>= 6.0.0 <=12.x.x'
-      react: '>= 16.0.0 <= 17.x.x'
-    dependencies:
-      next: 12.0.10_react-dom@17.0.2+react@17.0.2
-      nprogress: 0.2.0
-      prop-types: 15.8.1
-      react: 17.0.2
-    dev: false
-
-  /nprogress/0.2.0:
-    resolution: {integrity: sha1-y480xTIT2JVyP8urkH6UIq28r7E=}
     dev: false
 
   /object-assign/4.1.1:
