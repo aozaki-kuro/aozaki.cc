@@ -1,11 +1,12 @@
-import { Nextdotjs, Tailwindcss, Vercel } from '@icons-pack/react-simple-icons'
+import { Nextdotjs, Tailwindcss, Typescript } from '@icons-pack/react-simple-icons'
 
 const Footer = () => {
   return (
-    <footer className="text-xs text-center p-6 primary-text">
+    <footer className="text-base text-center p-6 primary-text">
       <div className="space-x-2 inline-flex items-center my-2">
-        <Nextdotjs size={16} />
-        <Vercel size={16} />
+        <Nextdotjs size={20} />
+        <Tailwindcss size={20} />
+        <Typescript size={20} />
       </div>
       <div>Built by Aozaki</div>
       <div>

@@ -8,9 +8,9 @@ import {
   faCameraRetro,
   faFilm,
   faHeadphonesSimple,
+  faFeatherPointed,
 } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
-import Link from 'next/link'
 
 const Main = () => {
   return (
@@ -25,7 +25,7 @@ const Main = () => {
           priority
         />
       </div>
-      <h1 className="font-bold mb-8 text-4xl heading-text">Aozaki Kuro</h1>
+      <h1 className="font-bold mb-8 text-5xl heading-text">Aozaki Kuro</h1>
 
       <p className="mb-8 text-lg">
         <FontAwesomeIcon icon={faStethoscope} /> Doctor / <FontAwesomeIcon icon={faHeartPulse} />{' '}
@@ -39,6 +39,11 @@ const Main = () => {
       </p>
 
       <p className="text-lg">
+        <FontAwesomeIcon icon={faFeatherPointed} />{' '}
+        <a href="https://blog.aozaki.cc/" target="_blank" rel="noopener noreferrer">
+          My Blog
+        </a>
+        <span className="px-2"> </span>
         <FontAwesomeIcon icon={faTwitter} />{' '}
         <a href="https://twitter.com/Aozaki__" target="_blank" rel="noopener noreferrer">
           @Aozaki
@@ -50,7 +55,7 @@ const Main = () => {
         </a>
       </p>
 
-      <p className="mt-8 flex space-x-2 items-center">
+      <p className="mt-8 flex space-x-2 items-center text-lg">
         <Mail size={15} />
         <a href="mailto:aozaki.blog@gmail.com">aozaki.blog#gmail.com</a>
       </p>
