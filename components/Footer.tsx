@@ -2,11 +2,11 @@ import { Nextdotjs, Tailwindcss, Typescript } from '@icons-pack/react-simple-ico
 
 const Footer = () => {
   return (
-    <footer className="text-base text-center p-6 primary-text">
+    <footer className="text-sm text-center p-6 primary-text">
       <div className="space-x-2 inline-flex items-center my-2">
-        <Nextdotjs size={20} />
-        <Tailwindcss size={20} />
-        <Typescript size={20} />
+        <Nextdotjs size={16} />
+        <Tailwindcss size={16} />
+        <Typescript size={16} />
       </div>
       <div>Built by Aozaki</div>
       <div>
