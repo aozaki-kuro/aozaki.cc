@@ -7,8 +7,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Aozaki Kuro</title>
-        <meta name="description" content="Aozaki Kuro" />
+        <title>Aozaki</title>
+        <meta name="description" content="Aozaki" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

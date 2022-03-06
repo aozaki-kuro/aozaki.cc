@@ -11,7 +11,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      <Script strategy="lazyOnload" src="https://beacon.suisei.cc/app.js" data-domain="aozaki.cc" />
+      <Script strategy="lazyOnload" src="https://beacon.aozaki.cc/app.js" data-domain="aozaki.cc" />
 
       <Component {...pageProps} />
     </ThemeProvider>
