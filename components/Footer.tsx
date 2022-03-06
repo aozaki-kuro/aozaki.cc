@@ -8,17 +8,8 @@ const Footer = () => {
         <Tailwindcss size={16} />
         <Typescript size={16} />
       </div>
-      <div>Built by Aozaki</div>
-      <div>
-        <a
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CC BY-NC-SA 4.0
-        </a>{' '}
-        ©️ 2014 - {new Date().getFullYear()}
-      </div>
+      <div className='mb-1'>Built by Aozaki</div>
+      <div>©️ 2014 - {new Date().getFullYear()}</div>
     </footer>
   )
 }
