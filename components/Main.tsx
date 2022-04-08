@@ -14,7 +14,7 @@ import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Main = () => {
   return (
-    <main className="container flex flex-col mx-auto flex-1 max-w-3xl px-6 justify-center">
+    <main className="container flex flex-col mx-auto flex-1 max-w-3xl px-6 justify-center items-center">
       <div className="mb-8">
         <Image
           className="rounded-full transition-all duration-100"
@@ -33,7 +33,7 @@ const Main = () => {
       </p>
 
       <p className="mb-8">
-        <FontAwesomeIcon icon={faCameraRetro} /> photographer /{' '}
+        <FontAwesomeIcon icon={faCameraRetro} /> Photographer /{' '}
         <FontAwesomeIcon icon={faHeadphonesSimple} /> Audiophile / <FontAwesomeIcon icon={faFilm} />{' '}
         Cinephile
       </p>

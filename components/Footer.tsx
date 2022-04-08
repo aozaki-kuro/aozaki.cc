@@ -8,7 +8,7 @@ const Footer = () => {
         <Tailwindcss size={16} />
         <Typescript size={16} />
       </div>
-      <div className='mb-1'>Built by Aozaki</div>
+      <div className="mb-1">Built by Aozaki</div>
       <div>©️ 2014 - {new Date().getFullYear()}</div>
     </footer>
   )
