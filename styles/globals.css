@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap');
 
+body {
+  @apply bg-[#111729]
+}
+
 a {
   @apply border-b border-b-dark-200/30 transition-all duration-100 no-underline dark:border-b-light-900/50 hover:border-b-dark-200/60 dark:hover:border-b-light-900/80;
 }
@@ -39,7 +43,6 @@ button {
 }
 
 .dotback2 {
-  background-color: #111729;
   background-image: radial-gradient(#e2c48d6c 1%, transparent 0),
     radial-gradient(#e2c48d6c 1%, transparent 0);
   background-size: 80px 80px;
