@@ -29,7 +29,7 @@ const Main = () => {
 
       <p className="mb-8 break-words">
         <FontAwesomeIcon icon={faStethoscope} /> Doctor / <FontAwesomeIcon icon={faHeartPulse} />{' '}
-        Cardiologist / <FontAwesomeIcon icon={faGraduationCap} /> PhD , MMed
+        Cardiologist / <FontAwesomeIcon icon={faGraduationCap} /> MD
       </p>
 
       <p className="mb-8">
