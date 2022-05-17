@@ -57,7 +57,7 @@ const Main = () => {
 
       <p className="mt-8 flex space-x-2 items-center">
         <Mail size={15} />
-        <a href="mailto:aozaki.blog@gmail.com">aozaki.blog#gmail.com</a>
+        <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
       </p>
     </main>
   )
