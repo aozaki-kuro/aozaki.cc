@@ -15,7 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@icons-pack/react-simple-icons": "^5.11.0",
-    "next": "^12.3.2",
+    "next": "^13.0.2",
     "next-themes": "^0.2.1",
     "prettier": "^2.7.1",
     "probe-image-size": "^7.2.2",
@@ -29,7 +29,7 @@
     "@types/probe-image-size": "^7.2.0",
     "@types/react": "18.0.25",
     "eslint": "8.26.0",
-    "eslint-config-next": "^12.3.2",
+    "eslint-config-next": "^13.0.2",
     "typescript": "4.8.4",
     "windicss-webpack-plugin": "^1.7.7"
   }
