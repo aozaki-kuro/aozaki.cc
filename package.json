@@ -15,9 +15,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.17",
     "@icons-pack/react-simple-icons": "^4.6.1",
-    "next": "^12.1.0",
+    "next": "^12.3.2",
     "next-themes": "^0.0.15",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
     "probe-image-size": "^7.2.2",
     "prop-types": "15.8.1",
     "react": "17.0.2",
@@ -29,7 +29,7 @@
     "@types/probe-image-size": "^7.0.1",
     "@types/react": "17.0.39",
     "eslint": "8.9.0",
-    "eslint-config-next": "^12.1.0",
+    "eslint-config-next": "^12.3.2",
     "typescript": "4.5.5",
     "windicss-webpack-plugin": "^1.6.7"
   }
