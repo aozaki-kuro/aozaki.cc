@@ -9,16 +9,16 @@
     "format": "prettier '*/**/*.+(js|jsx|ts|tsx|json|css|md|mdx)' --write"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-regular-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@icons-pack/react-simple-icons": "^5.11.0",
-    "next": "^13.0.2",
+    "next": "^13.0.4",
     "next-themes": "^0.2.1",
     "prettier": "^2.7.1",
-    "probe-image-size": "^7.2.2",
+    "probe-image-size": "^7.2.3",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -29,7 +29,7 @@
     "@types/probe-image-size": "^7.2.0",
     "@types/react": "18.0.25",
     "eslint": "8.26.0",
-    "eslint-config-next": "^13.0.2",
+    "eslint-config-next": "^13.0.4",
     "typescript": "4.8.4",
     "windicss-webpack-plugin": "^1.7.7"
   }
