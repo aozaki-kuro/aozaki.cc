@@ -56,7 +56,7 @@ const Main = () => {
       <p className="mt-8 flex space-x-2 items-center">
         <FontAwesomeIcon icon={faKey} />{' '}
         <a href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
-          <p>GPG Key</p>
+          GPG Key
         </a>
         <span className="px-2"> </span>
         <Mail size={15} />
