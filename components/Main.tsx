@@ -9,6 +9,7 @@ import {
   faFilm,
   faHeadphonesSimple,
   faFeatherPointed,
+  faKey,
 } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -39,10 +40,7 @@ const Main = () => {
       </p>
 
       <p className="">
-        <FontAwesomeIcon icon={faFeatherPointed} />{' '}
-        <a href="https://blog.aozaki.cc/">
-          My Blog
-        </a>
+        <FontAwesomeIcon icon={faFeatherPointed} /> <a href="https://blog.aozaki.cc/">My Blog</a>
         <span className="px-2"> </span>
         <FontAwesomeIcon icon={faTwitter} />{' '}
         <a href="https://twitter.com/Aozaki__" target="_blank" rel="noopener noreferrer">
@@ -56,6 +54,11 @@ const Main = () => {
       </p>
 
       <p className="mt-8 flex space-x-2 items-center">
+        <FontAwesomeIcon icon={faKey} />{' '}
+        <a href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
+          <p>GPG Key</p>
+        </a>
+        <span className="px-2"> </span>
         <Mail size={15} />
         <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
       </p>
