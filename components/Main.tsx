@@ -40,7 +40,7 @@ const Main = () => {
 
       <p className="">
         <FontAwesomeIcon icon={faFeatherPointed} />{' '}
-        <a href="https://blog.aozaki.cc/" target="_blank" rel="noopener noreferrer">
+        <a href="https://blog.aozaki.cc/">
           My Blog
         </a>
         <span className="px-2"> </span>
