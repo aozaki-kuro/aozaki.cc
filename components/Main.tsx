@@ -59,8 +59,7 @@ const Main = () => {
           GPG Key
         </a>
         <span className="px-2"> </span>
-        <FontAwesomeIcon icon={faEnvelope} />{' '}
-        <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
+        <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
       </p>
     </main>
   )
