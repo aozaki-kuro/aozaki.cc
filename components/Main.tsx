@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { Mail } from 'react-feather'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faStethoscope,
@@ -9,6 +8,7 @@ import {
   faFilm,
   faHeadphonesSimple,
   faFeatherPointed,
+  faEnvelope,
   faKey,
 } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -44,22 +44,22 @@ const Main = () => {
         <span className="px-2"> </span>
         <FontAwesomeIcon icon={faTwitter} />{' '}
         <a href="https://twitter.com/Aozaki__" target="_blank" rel="noopener noreferrer">
-          @Aozaki
+          Twitter
         </a>
         <span className="px-2"> </span>
         <FontAwesomeIcon icon={faGithub} />{' '}
         <a href="https://github.com/aozaki-kuro" target="_blank" rel="noopener noreferrer">
-          aozaki-kuro
+          Github
         </a>
       </p>
 
-      <p className="mt-8 flex space-x-2 items-center">
+      <p className="mt-8">
         <FontAwesomeIcon icon={faKey} />{' '}
         <a href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
           GPG Key
         </a>
         <span className="px-2"> </span>
-        <Mail size={15} />
+        <FontAwesomeIcon icon={faEnvelope} />{' '}
         <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
       </p>
     </main>

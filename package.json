@@ -11,22 +11,17 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
-    "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@icons-pack/react-simple-icons": "^5.11.0",
     "next": "^13.0.5",
     "next-themes": "^0.2.1",
     "prettier": "^2.8.0",
-    "probe-image-size": "^7.2.3",
-    "prop-types": "15.8.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-feather": "^2.0.10"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/node": "18.11.9",
-    "@types/probe-image-size": "^7.2.0",
     "@types/react": "18.0.25",
     "eslint": "8.26.0",
     "eslint-config-next": "^13.0.5",
