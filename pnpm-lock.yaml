@@ -5,7 +5,6 @@ specifiers:
   '@fortawesome/free-brands-svg-icons': ^6.2.1
   '@fortawesome/free-solid-svg-icons': ^6.2.1
   '@fortawesome/react-fontawesome': ^0.2.0
-  '@icons-pack/react-simple-icons': ^6.2.0
   '@types/node': 18.11.10
   '@types/react': 18.0.25
   '@vercel/analytics': ^0.1.5
@@ -24,7 +23,6 @@ dependencies:
   '@fortawesome/free-brands-svg-icons': 6.2.1
   '@fortawesome/free-solid-svg-icons': 6.2.1
   '@fortawesome/react-fontawesome': 0.2.0_z27bm67dtmuyyvss23ckjdrcuy
-  '@icons-pack/react-simple-icons': 6.2.0_react@18.2.0
   '@vercel/analytics': 0.1.5_react@18.2.0
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   next-themes: 0.2.1_6jx7hpii6hgsrmhxgqrmo3277u
@@ -138,14 +136,6 @@ packages:
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
-
-  /@icons-pack/react-simple-icons/6.2.0_react@18.2.0:
-    resolution: {integrity: sha512-YZzB5oHRvOslOIiug97dLqfhv7U0+78JOa8w5Aqxq2Ulr2bVBrqtFV+hMKXhcZjlPdFzpUrFfAJ9AHLe4FdYqQ==}
-    peerDependencies:
-      react: ^16.13 || ^17 || ^18
-    dependencies:
-      react: 18.2.0
-    dev: false
 
   /@next/env/13.0.6:
     resolution: {integrity: sha512-yceT6DCHKqPRS1cAm8DHvDvK74DLIkDQdm5iV+GnIts8h0QbdHvkUIkdOvQoOODgpr6018skbmSQp12z5OWIQQ==}
