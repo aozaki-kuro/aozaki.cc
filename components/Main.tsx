@@ -10,6 +10,7 @@ import {
   faFeatherPointed,
   faEnvelope,
   faKey,
+  faEarthAsia
 } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -51,6 +52,15 @@ const Main = () => {
         <a href="https://github.com/aozaki-kuro" target="_blank" rel="noopener noreferrer">
           Github
         </a>
+      </p>
+
+      <p className="mt-8">
+        <FontAwesomeIcon icon={faEarthAsia} />{' '}
+        <a href="https://t.aozaki.cc/@aozaki" target="_blank" rel="noopener noreferrer">
+          Misskey
+        </a>
+        <span className="px-2"> </span>
+        [ @aozaki@t.aozaki.cc ]
       </p>
 
       <p className="mt-8">
