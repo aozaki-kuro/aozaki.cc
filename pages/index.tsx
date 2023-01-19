@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <meta name="twitter:image" content="https://profile.aozaki.cc/twitter-card.jpg" />
       </Head>
 
-      <div className="flex flex-col min-h-screen dotback2 dark">
+      <div className="flex flex-col min-h-[100dvh] dotback2 dark">
         <Main />
         <Footer />
       </div>
