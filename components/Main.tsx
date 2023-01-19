@@ -16,8 +16,8 @@ import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Main = () => {
   return (
-    <main className="container flex flex-col mx-auto flex-1 max-w-3xl px-6 justify-center items-center">
-      <div className="mb-8">
+    <main className="container flex flex-col mx-auto flex-1 max-w-3xl px-6 justify-center items-center md:text-sm">
+      <div className="mb-8 md:mb-4">
         <Image
           className="rounded-full transition-all duration-100"
           src="/images/avatar.jpg"
@@ -27,14 +27,14 @@ const Main = () => {
           priority
         />
       </div>
-      <h1 className="font-bold mb-8 text-4xl heading-text">[ Aozaki ]</h1>
+      <h1 className="font-bold md:mb-4 mb-8  text-4xl heading-text">[ Aozaki ]</h1>
 
-      <p className="mb-8 break-words">
+      <p className="mb-8 md:mb-4 break-words">
         <FontAwesomeIcon icon={faStethoscope} /> Doctor / <FontAwesomeIcon icon={faHeartPulse} />{' '}
         Cardiologist / <FontAwesomeIcon icon={faGraduationCap} /> MD
       </p>
 
-      <p className="mb-8">
+      <p className="mb-8 md:mb-4">
         <FontAwesomeIcon icon={faCameraRetro} /> Photographer /{' '}
         <FontAwesomeIcon icon={faHeadphonesSimple} /> Audiophile / <FontAwesomeIcon icon={faFilm} />{' '}
         Cinephile
@@ -54,7 +54,7 @@ const Main = () => {
         </a>
       </p>
 
-      <p className="mt-8">
+      <p className="mt-8 md:mt-4">
         <FontAwesomeIcon icon={faEarthAsia} />{' '}
         <a href="https://t.aozaki.cc/@aozaki" target="_blank" rel="noopener noreferrer">
           Misskey
@@ -63,7 +63,7 @@ const Main = () => {
         [ @aozaki@t.aozaki.cc ]
       </p>
 
-      <p className="mt-8">
+      <p className="mt-8 md:mt-4">
         <FontAwesomeIcon icon={faKey} />{' '}
         <a href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
           GPG Key
