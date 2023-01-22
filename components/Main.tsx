@@ -9,10 +9,13 @@ import {
   faHeadphonesSimple,
   faFeatherPointed,
   faEnvelope,
-  faKey,
-  faEarthAsia
+  faKey
 } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+import {
+  faTwitter,
+  faGithub,
+  faMastodon
+} from '@fortawesome/free-brands-svg-icons'
 
 const Main = () => {
   return (
@@ -67,15 +70,15 @@ const Main = () => {
       </p>
 
       <p className="mt-4 md:mt-8">
-        <FontAwesomeIcon icon={faEarthAsia} />{' '}
+        <FontAwesomeIcon icon={faMastodon} />{' '}
         <a
-          href="https://t.aozaki.cc/@aozaki"
+          href="https://mastodon.social/@aozakiii"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="me noopener noreferrer"
         >
-          Misskey
+          Mastodon
         </a>
-        <span className="px-2"> </span>[ @aozaki@t.aozaki.cc ]
+        <span className="px-2"> </span>[ @aozakiii@mastodon.social ]
       </p>
 
       <p className="mt-4 md:mt-8">
