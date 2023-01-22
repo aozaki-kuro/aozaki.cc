@@ -12,7 +12,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <Component {...pageProps} />
-      <Script defer data-domain="aozaki.cc" src="https://sight.aozaki.cc/app.js" />
+      <Script
+        defer
+        data-domain="aozaki.cc"
+        src="https://sight.aozaki.cc/app.js"
+      />
     </ThemeProvider>
   )
 }

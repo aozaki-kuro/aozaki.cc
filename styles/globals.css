@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  @apply border-b border-b-dark-200/30 transition-all duration-100 no-underline dark:border-b-light-900/50 hover:border-b-dark-200/60 dark:hover:border-b-light-900/80;
+  @apply border-b-dark-200/30 dark:border-b-light-900/50 hover:border-b-dark-200/60 dark:hover:border-b-light-900/80 border-b no-underline transition-all duration-100;
 }
 
 p,
 li {
-  @apply text-dark-900/80 leading-7 overflow-ellipsis overflow-hidden dark:text-light-900/80;
+  @apply text-dark-900/80 dark:text-light-900/80 overflow-hidden overflow-ellipsis leading-7;
 }
 
 .heading-text {
@@ -24,14 +24,6 @@ li {
 
 .secondary-text {
   @apply text-dark-900/60 dark:text-light-900/60;
-}
-
-code {
-  @apply font-mono;
-}
-
-button {
-  @apply focus-visible:outline-none focus:outline-none !important;
 }
 
 * {
