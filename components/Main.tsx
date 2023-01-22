@@ -17,7 +17,7 @@ import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 const Main = () => {
   return (
     <main className="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-sm md:text-base">
-      <div className="mb-4 md:mb-8">
+      <div className="mb-8">
         <Image
           className="rounded-full transition-all duration-100"
           src="/images/avatar.jpg"
@@ -27,7 +27,9 @@ const Main = () => {
           priority
         />
       </div>
-      <h1 className="heading-text mb-8 text-4xl font-bold">[ Aozaki ]</h1>
+      <h1 className="heading-text mb-8 text-3xl font-bold md:text-4xl">
+        [ Aozaki ]
+      </h1>
 
       <p className="mb-4 break-words md:mb-8">
         <FontAwesomeIcon icon={faStethoscope} /> Doctor /{' '}
