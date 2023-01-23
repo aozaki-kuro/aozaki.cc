@@ -19,6 +19,7 @@ li {
 .heading-text {
   @apply text-dark-900 dark:text-light-900;
 }
+
 .primary-text {
   @apply text-dark-900/80 dark:text-light-900/80;
 }
