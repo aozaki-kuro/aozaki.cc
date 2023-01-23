@@ -76,7 +76,7 @@ const Main = () => {
           target="_blank"
           rel="me noopener noreferrer"
         >
-          @aozakiii@mastodon.social
+          Mastodon
         </a>
       </p>
 
