@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faStethoscope,
@@ -48,46 +49,46 @@ const Main = () => {
 
       <p className="">
         <FontAwesomeIcon icon={faFeatherPointed} />{' '}
-        <a href="https://blog.aozaki.cc/">My Blog</a>
+        <Link href="https://blog.aozaki.cc/">My Blog</Link>
         <span className="px-2"> </span>
         <FontAwesomeIcon icon={faTwitter} />{' '}
-        <a
+        <Link
           href="https://twitter.com/Aozaki__"
           target="_blank"
           rel="noopener noreferrer"
         >
           Twitter
-        </a>
+        </Link>
         <span className="px-2"> </span>
         <FontAwesomeIcon icon={faGithub} />{' '}
-        <a
+        <Link
           href="https://github.com/aozaki-kuro"
           target="_blank"
           rel="noopener noreferrer"
         >
           Github
-        </a>
+        </Link>
       </p>
 
       <p className="mt-4 md:mt-8">
         <FontAwesomeIcon icon={faMastodon} />{' '}
-        <a
+        <Link
           href="https://mastodon.social/@aozakiii"
           target="_blank"
           rel="me noopener noreferrer"
         >
           Mastodon
-        </a>
+        </Link>
       </p>
 
       <p className="mt-4 md:mt-8">
         <FontAwesomeIcon icon={faKey} />{' '}
-        <a href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
+        <Link href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
           GPG Key
-        </a>
+        </Link>
         <span className="px-2"> </span>
         <FontAwesomeIcon icon={faEnvelope} />{' '}
-        <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
+        <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
       </p>
     </main>
   )
