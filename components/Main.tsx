@@ -76,9 +76,8 @@ const Main = () => {
           target="_blank"
           rel="me noopener noreferrer"
         >
-          Mastodon
+          @aozakiii@mastodon.social
         </a>
-        <span className="px-2"> </span>[ @aozakiii@mastodon.social ]
       </p>
 
       <p className="mt-4 md:mt-8">
