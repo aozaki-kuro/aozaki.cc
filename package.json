@@ -2,11 +2,11 @@
   "name": "aozaki.cc",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier '*/**/*.+(js|jsx|ts|tsx|json|css|md|mdx)' --write"
+    "lint-fix": "next lint --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -30,8 +30,8 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-tailwindcss": "^3.8.2",
     "prettier": "2.8.3",
-    "prettier-plugin-tailwindcss": "^0.2.2",
     "typescript": "^4.9.4",
     "windicss-webpack-plugin": "^1.7.7"
   },
@@ -39,9 +39,6 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "none",
-    "arrowParens": "avoid",
-    "plugins": [
-      "prettier-plugin-tailwindcss"
-    ]
+    "arrowParens": "avoid"
   }
 }

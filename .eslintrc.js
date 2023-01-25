@@ -5,6 +5,7 @@ module.exports = {
     'plugin:@next/next/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
+    'plugin:tailwindcss/recommended',
     'plugin:prettier/recommended'
   ],
   plugins: ['@typescript-eslint'],
