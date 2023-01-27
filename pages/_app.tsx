@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import 'windi.css'
+import 'tailwindcss/tailwind.css'
+import '../styles/main.css'
 
 import type { AppProps } from 'next/app'
 import Script from 'next/script'

@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
@@ -52,7 +51,6 @@ module.exports = {
   },
 
   webpack(config) {
-    config.plugins.push(new WindiCSSWebpackPlugin())
     return config
   }
 }

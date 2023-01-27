@@ -21,7 +21,7 @@ import {
 const Main = () => {
   return (
     <main className="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-sm md:text-base">
-      <div className="mb-8">
+      <div className="mb-10">
         <Image
           className="rounded-full transition-all duration-100"
           src="/images/avatar.jpg"
@@ -31,7 +31,7 @@ const Main = () => {
           priority
         />
       </div>
-      <h1 className="heading-text mb-8 text-3xl font-bold md:text-4xl">
+      <h1 className="mb-8 text-3xl font-bold text-zinc-200 md:text-4xl">
         [ Aozaki ]
       </h1>
 

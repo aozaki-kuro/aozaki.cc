@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Overpass:wght@400;500;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a,
+Link {
+  @apply border-b border-zinc-300/50 text-inherit no-underline transition-all duration-100 hover:border-zinc-400/90;
+}
+
+p,
+li {
+  @apply overflow-hidden overflow-ellipsis leading-7 text-zinc-300/90;
+}
+
+.dotback2 {
+  background-image: radial-gradient(#e2c48d6c 1%, transparent 0),
+    radial-gradient(#e2c48d6c 1%, transparent 0);
+  background-size: 80px 80px;
+  background-position: 0 0, 160px 160px;
+}

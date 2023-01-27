@@ -48,7 +48,7 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <div className="dotback2 dark flex min-h-[100dvh] flex-col">
+      <div className="flex min-h-[100dvh] flex-col">
         <Main />
         <Footer />
       </div>

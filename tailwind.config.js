@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-
 module.exports = {
-  darkMode: 'class',
-  extract: {
-    include: ['**/*.{jsx,tsx,css}'],
-    exclude: ['node_modules', '.git', '.next']
-  },
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './styles/main.css',
+    'theme.config.tsx'
+  ],
   theme: {
     fontFamily: {
       sans: ['Overpass'],
@@ -27,6 +27,8 @@ module.exports = {
 
       '2xl': '1536px'
       // => @media (min-width: 1536px) { ... }
-    }
-  }
+    },
+    extend: {}
+  },
+  plugins: []
 }
