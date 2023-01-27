@@ -20,7 +20,7 @@ import {
 
 const Main = () => {
   return (
-    <main className="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-sm md:text-base">
+    <main className="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-center text-sm md:text-base">
       <div className="mb-10">
         <Image
           className="rounded-full transition-all duration-100"
@@ -35,61 +35,67 @@ const Main = () => {
         [ Aozaki ]
       </h1>
 
-      <p className="mb-4 break-words md:mb-8">
-        <FontAwesomeIcon icon={faStethoscope} /> Doctor /{' '}
-        <FontAwesomeIcon icon={faHeartPulse} /> Cardiologist /{' '}
-        <FontAwesomeIcon icon={faGraduationCap} /> MD
-      </p>
+      {/* Introduction Words */}
+      <div className="bg-night-blue">
+        <p className="mb-4 break-words md:mb-8">
+          <FontAwesomeIcon icon={faStethoscope} /> Doctor /{' '}
+          <FontAwesomeIcon icon={faHeartPulse} /> Cardiologist /{' '}
+          <FontAwesomeIcon icon={faGraduationCap} /> MD
+        </p>
 
-      <p className="mb-4 md:mb-8">
-        <FontAwesomeIcon icon={faCameraRetro} /> Photographer /{' '}
-        <FontAwesomeIcon icon={faHeadphonesSimple} /> Audiophile /{' '}
-        <FontAwesomeIcon icon={faFilm} /> Cinephile
-      </p>
+        <p className="mb-4 md:mb-8">
+          <FontAwesomeIcon icon={faCameraRetro} /> Photographer /{' '}
+          <FontAwesomeIcon icon={faHeadphonesSimple} /> Audiophile /{' '}
+          <FontAwesomeIcon icon={faFilm} /> Cinephile
+        </p>
 
-      <p className="">
-        <FontAwesomeIcon icon={faFeatherPointed} />{' '}
-        <Link href="https://blog.aozaki.cc/">My Blog</Link>
-        <span className="px-2"> </span>
-        <FontAwesomeIcon icon={faTwitter} />{' '}
-        <Link
-          href="https://twitter.com/Aozaki__"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Twitter
-        </Link>
-        <span className="px-2"> </span>
-        <FontAwesomeIcon icon={faGithub} />{' '}
-        <Link
-          href="https://github.com/aozaki-kuro"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github
-        </Link>
-      </p>
+        <p className="">
+          <FontAwesomeIcon icon={faFeatherPointed} />{' '}
+          <Link href="https://blog.aozaki.cc/">My Blog</Link>
+          <span className="px-2"> </span>
+          <FontAwesomeIcon icon={faTwitter} />{' '}
+          <Link
+            href="https://twitter.com/Aozaki__"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </Link>
+          <span className="px-2"> </span>
+          <FontAwesomeIcon icon={faGithub} />{' '}
+          <Link
+            href="https://github.com/aozaki-kuro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </Link>
+        </p>
+      </div>
 
-      <p className="mt-4 md:mt-8">
-        <FontAwesomeIcon icon={faMastodon} />{' '}
-        <Link
-          href="https://mastodon.social/@aozakiii"
-          target="_blank"
-          rel="me noopener noreferrer"
-        >
-          Mastodon
-        </Link>
-      </p>
+      {/* Social Links */}
+      <div className="bg-night-blue text-center">
+        <p className="mt-4 md:mt-8">
+          <FontAwesomeIcon icon={faMastodon} />{' '}
+          <Link
+            href="https://mastodon.social/@aozakiii"
+            target="_blank"
+            rel="me noopener noreferrer"
+          >
+            Mastodon
+          </Link>
+        </p>
 
-      <p className="mt-4 md:mt-8">
-        <FontAwesomeIcon icon={faKey} />{' '}
-        <Link href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
-          GPG Key
-        </Link>
-        <span className="px-2"> </span>
-        <FontAwesomeIcon icon={faEnvelope} />{' '}
-        <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
-      </p>
+        <p className="mt-4 md:mt-8">
+          <FontAwesomeIcon icon={faKey} />{' '}
+          <Link href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
+            GPG Key
+          </Link>
+          <span className="px-2"> </span>
+          <FontAwesomeIcon icon={faEnvelope} />{' '}
+          <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
+        </p>
+      </div>
     </main>
   )
 }

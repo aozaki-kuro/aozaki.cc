@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="dotback2 box-border bg-[#111729] antialiased selection:bg-sky-600/20">
+      <body className="dotback2 box-border bg-night-blue tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal">
         <Main />
         <NextScript />
       </body>
