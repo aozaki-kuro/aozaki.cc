@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2020",
+    "target": "ES6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -30,8 +30,7 @@
     "compilerOptions": {
       "module": "CommonJS",
       "paths": {
-        "#data/*": ["data/*"],
-        "#utils/*": ["utils/*"]
+        "#data/*": ["data/*"]
       }
     },
     "require": ["tsconfig-paths/register"]

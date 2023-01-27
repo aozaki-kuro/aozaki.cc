@@ -1,6 +1,9 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
-  parser: '@typescript-eslint/parser', //定义ESLint的解析器
+  root: true,
   reportUnusedDisableDirectives: true,
+  ignorePatterns: ['next-env.d.ts'],
+  parser: '@typescript-eslint/parser', //定义ESLint的解析器
   extends: [
     'plugin:@next/next/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -36,8 +39,15 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     // allow jsx syntax in js files (for next.js project)
     'react/jsx-filename-extension': [
-      1,
-      { extensions: ['.js', '.jsx', '.ts', '.tsx'] }
-    ] //should add ".ts" if typescript project
+      'error',
+      { extensions: ['.tsx', '.jsx'], allow: 'as-needed' }
+    ], //should add ".ts" if typescript project
+
+    // Tailwind CSS
+    'tailwindcss/classnames-order': 'off', // conflicts with prettier-plugin-tailwindcss
+    'tailwindcss/enforces-negative-arbitrary-values': 'error',
+    'tailwindcss/enforces-shorthand': 'error',
+    'tailwindcss/migration-from-tailwind-2': 'error',
+    'tailwindcss/no-custom-classname': 'error'
   }
 }
