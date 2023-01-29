@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-fix": "next lint --fix"
+    "lint-fix": "next lint --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -33,6 +34,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-tailwindcss": "^3.8.2",
+    "husky": ">=7",
+    "lint-staged": ">=10",
     "prettier": "2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "typescript": "^4.9.4"
@@ -44,6 +47,14 @@
     "arrowParens": "avoid",
     "plugins": [
       "prettier-plugin-tailwindcss"
+    ]
+  },
+  "lint-staged": {
+    "*.+(js|jsx|ts|tsx)": [
+      "eslint --cache --fix"
+    ],
+    "*.+(json|css|md|mdx)": [
+      "prettier --write"
     ]
   }
 }
