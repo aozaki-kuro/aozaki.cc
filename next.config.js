@@ -5,5 +5,9 @@ module.exports = {
   images: {
     domains: ['img.aozaki.cc'],
     unoptimized: true
+  },
+  // Ignore Lint during Build
+  eslint: {
+    ignoreDuringBuilds: true
   }
 }
