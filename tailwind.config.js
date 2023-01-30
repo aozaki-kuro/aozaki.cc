@@ -7,9 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Overpass'],
-      serif: ['"Old Standard TT"'],
-      mono: ['"Overpass Mono"']
+      sans: ['var(--font-overpass)']
     },
     screens: {
       sm: '640px',
