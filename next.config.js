@@ -3,8 +3,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['img.aozaki.cc'],
-    unoptimized: true
+    domains: ['img.aozaki.cc']
   },
   // Ignore Lint during Build
   eslint: {
