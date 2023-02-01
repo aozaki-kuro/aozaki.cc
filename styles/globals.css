@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-a,
-Link {
-  @apply border-b border-zinc-300/50 text-inherit no-underline transition-all duration-100 hover:border-zinc-400/90;
-}
+@layer base {
+  a,
+  Link {
+    @apply border-b border-zinc-300/50 text-inherit no-underline transition-all duration-100 hover:border-zinc-400/90;
+  }
 
-p,
-li {
-  @apply overflow-hidden overflow-ellipsis leading-7 text-zinc-300/90;
+  p,
+  li {
+    @apply overflow-hidden overflow-ellipsis leading-7 text-zinc-300/90;
+  }
 }
 
 .dotback2 {
