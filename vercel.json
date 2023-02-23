@@ -1,5 +1,13 @@
 {
   "github": {
     "silent": true
-  }
+  },
+
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "https://blog.aozaki.cc/",
+      "statusCode": 301
+    }
+  ]
 }
