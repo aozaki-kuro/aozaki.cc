@@ -51,23 +51,15 @@ const Main = () => {
 
         <p className="">
           <FontAwesomeIcon icon={faFeatherPointed} />{' '}
-          <Link href="https://blog.aozaki.cc/">My Blog</Link>
+          <Link href="./blog">My Blog</Link>
           <span className="px-2"> </span>
           <FontAwesomeIcon icon={faTwitter} />{' '}
-          <Link
-            href="https://twitter.com/Aozaki__"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="./twitter" target="_blank" rel="noopener noreferrer">
             Twitter
           </Link>
           <span className="px-2"> </span>
           <FontAwesomeIcon icon={faGithub} />{' '}
-          <Link
-            href="https://github.com/aozaki-kuro"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="./github" target="_blank" rel="noopener noreferrer">
             Github
           </Link>
         </p>

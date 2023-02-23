@@ -7,7 +7,17 @@
     {
       "source": "/blog",
       "destination": "https://blog.aozaki.cc/",
-      "statusCode": 301
+      "statusCode": 308
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/Aozaki__",
+      "statusCode": 308
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/aozaki-kuro",
+      "statusCode": 308
     }
   ]
 }
