@@ -4,7 +4,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
 
-import { Overpass } from '@next/font/google'
+import { Overpass } from 'next/font/google'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
