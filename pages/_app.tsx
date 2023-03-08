@@ -20,8 +20,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     <main className={`${overpass.variable} font-sans`}>
       <Component {...pageProps} />
       <Script
-        defer
-        data-domain="aozaki.cc"
+        strategy="afterInteractive"
+        data-website-id="3ab1dedc-dac8-4cc4-b72d-ed962f1c8578"
         src="https://sight.aozaki.cc/app.js"
       />
     </main>
