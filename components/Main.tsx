@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -51,13 +52,19 @@ const Main = () => {
 
         <p className="">
           <FontAwesomeIcon icon={faFeatherPointed} />{' '}
-          <Link href="https://blog.aozaki.cc/">My Blog</Link>
+          <Link
+            href="https://blog.aozaki.cc/"
+            className="umami--click--check-blog"
+          >
+            My Blog
+          </Link>
           <span className="px-2"> </span>
           <FontAwesomeIcon icon={faTwitter} />{' '}
           <Link
             href="https://twitter.com/Aozaki__"
             target="_blank"
             rel="noopener noreferrer"
+            className="umami--click--check-twitter"
           >
             Twitter
           </Link>
@@ -67,6 +74,7 @@ const Main = () => {
             href="https://github.com/aozaki-kuro"
             target="_blank"
             rel="noopener noreferrer"
+            className="umami--click--check-github"
           >
             Github
           </Link>
@@ -81,6 +89,7 @@ const Main = () => {
             href="https://mastodon.social/@aozakiii"
             target="_blank"
             rel="me noopener noreferrer"
+            className="umami--click--check-mastodon"
           >
             Mastodon
           </Link>
@@ -88,10 +97,15 @@ const Main = () => {
 
         <p className="mt-4 md:mt-8">
           <FontAwesomeIcon icon={faKey} />{' '}
-          <Link href="./pubkey.txt" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="./pubkey.txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="umami--click--check-gpg-key"
+          >
             GPG Key
           </Link>
-          <span className="px-2"> </span>
+          <span className="umami--click--send-email px-2"> </span>
           <FontAwesomeIcon icon={faEnvelope} />{' '}
           <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
         </p>
