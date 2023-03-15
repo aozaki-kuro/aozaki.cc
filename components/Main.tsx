@@ -1,4 +1,3 @@
-/* eslint-disable tailwindcss/no-custom-classname */
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -52,10 +51,7 @@ const Main = () => {
 
         <p className="">
           <FontAwesomeIcon icon={faFeatherPointed} />{' '}
-          <Link
-            href="https://blog.aozaki.cc/"
-            className="umami--click--check-blog"
-          >
+          <Link href="https://blog.aozaki.cc/" className="">
             My Blog
           </Link>
           <span className="px-2"> </span>
@@ -64,7 +60,7 @@ const Main = () => {
             href="https://twitter.com/Aozaki__"
             target="_blank"
             rel="noopener noreferrer"
-            className="umami--click--check-twitter"
+            className=""
           >
             Twitter
           </Link>
@@ -74,7 +70,7 @@ const Main = () => {
             href="https://github.com/aozaki-kuro"
             target="_blank"
             rel="noopener noreferrer"
-            className="umami--click--check-github"
+            className=""
           >
             Github
           </Link>
@@ -89,7 +85,7 @@ const Main = () => {
             href="https://mastodon.social/@aozakiii"
             target="_blank"
             rel="me noopener noreferrer"
-            className="umami--click--check-mastodon"
+            className=""
           >
             Mastodon
           </Link>
@@ -101,11 +97,11 @@ const Main = () => {
             href="./pubkey.txt"
             target="_blank"
             rel="noopener noreferrer"
-            className="umami--click--check-gpg-key"
+            className=""
           >
             GPG Key
           </Link>
-          <span className="umami--click--send-email px-2"> </span>
+          <span className="px-2"> </span>
           <FontAwesomeIcon icon={faEnvelope} />{' '}
           <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
         </p>

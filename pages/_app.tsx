@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Script
         strategy="afterInteractive"
-        data-website-id="de79230e-e411-43b6-8fd5-cc50c306c837"
+        data-domain="aozaki.cc"
         src="https://sight.aozaki.cc/app.js"
       />
     </main>
