@@ -1,12 +1,11 @@
-import 'tailwindcss/tailwind.css'
-import '../styles/globals.css'
-
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
 
 import { Overpass } from 'next/font/google'
-
 import '@fortawesome/fontawesome-svg-core/styles.css'
+
+import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
 
 const overpass = Overpass({
   subsets: ['latin'],
@@ -17,14 +16,16 @@ const overpass = Overpass({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${overpass.variable} font-sans`}>
-      <Component {...pageProps} />
+    <>
       <Script
         strategy="afterInteractive"
         data-domain="aozaki.cc"
         src="https://sight.aozaki.cc/app.js"
       />
-    </main>
+      <main className={`${overpass.variable} font-sans`}>
+        <Component {...pageProps} />
+      </main>
+    </>
   )
 }
 
