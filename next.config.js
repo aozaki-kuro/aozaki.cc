@@ -36,7 +36,8 @@ const securityHeaders = [
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['img.aozaki.cc']
+    domains: ['img.aozaki.cc'],
+    unoptimized: true
   },
   // Security Headers
   async headers() {
