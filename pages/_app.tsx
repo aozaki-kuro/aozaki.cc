@@ -17,13 +17,13 @@ const overpass = Overpass({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Script
-        strategy="afterInteractive"
-        data-domain="aozaki.cc"
-        src="https://sight.aozaki.cc/app.js"
-      />
       <main className={`${overpass.variable} font-sans`}>
         <Component {...pageProps} />
+        <Script
+          strategy="afterInteractive"
+          data-domain="aozaki.cc"
+          src="https://sight.aozaki.cc/app.js"
+        />
       </main>
     </>
   )
