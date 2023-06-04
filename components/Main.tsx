@@ -21,7 +21,7 @@ import {
 const Main = () => {
   return (
     <main className="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-center text-sm md:text-base">
-      <div className="mb-10">
+      <div className="mb-6 md:mb-10">
         <Image
           className="rounded-full transition-all duration-100"
           src="/images/avatar.jpg"
@@ -31,19 +31,19 @@ const Main = () => {
           priority
         />
       </div>
-      <h1 className="mb-8 text-3xl font-bold text-zinc-200 md:text-4xl">
+      <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">
         [ Aozaki ]
       </h1>
 
       {/* Introduction Words */}
       <div className="bg-night-blue">
-        <p className="mb-4 break-words md:mb-8">
+        <p className="mb-3 break-words md:mb-8">
           <FontAwesomeIcon icon={faStethoscope} /> Doctor /{' '}
           <FontAwesomeIcon icon={faHeartPulse} /> Cardiologist /{' '}
           <FontAwesomeIcon icon={faGraduationCap} /> MD
         </p>
 
-        <p className="mb-4 md:mb-8">
+        <p className="mb-3 md:mb-8">
           <FontAwesomeIcon icon={faCameraRetro} /> Photographer /{' '}
           <FontAwesomeIcon icon={faHeadphonesSimple} /> Audiophile /{' '}
           <FontAwesomeIcon icon={faFilm} /> Cinephile
@@ -79,7 +79,7 @@ const Main = () => {
 
       {/* Social Links */}
       <div className="bg-night-blue text-center">
-        <p className="mt-4 md:mt-8">
+        <p className="mt-3 md:mt-8">
           <FontAwesomeIcon icon={faMastodon} />{' '}
           <Link
             href="https://mastodon.social/@aozakiii"
@@ -91,7 +91,7 @@ const Main = () => {
           </Link>
         </p>
 
-        <p className="mt-4 md:mt-8">
+        <p className="mt-3 md:mt-8">
           <FontAwesomeIcon icon={faKey} />{' '}
           <Link
             href="./pubkey.txt"
