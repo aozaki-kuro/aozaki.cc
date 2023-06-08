@@ -3,3 +3,5 @@
 .github
 .contentlayer
 pnpm-lock.yaml
+
+.turbo
