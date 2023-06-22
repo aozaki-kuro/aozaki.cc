@@ -37,7 +37,7 @@ const Main = () => {
 
       {/* Introduction Words */}
       <div className="bg-night-blue">
-        <p className="mb-3 break-words md:mbcm-8">
+        <p className="mb-3 break-words md:mb-8">
           <FontAwesomeIcon icon={faStethoscope} /> Doctor /{' '}
           <FontAwesomeIcon icon={faHeartPulse} /> Cardiologist /{' '}
           <FontAwesomeIcon icon={faGraduationCap} /> MD
