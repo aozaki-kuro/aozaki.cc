@@ -38,3 +38,5 @@ yarn-error.log*
 
 out
 .turbo
+
+next-env.d.ts
