@@ -15,7 +15,9 @@ import {
 import {
   faTwitter,
   faGithub,
-  faMastodon
+  faMastodon,
+  faDiscord,
+  faTelegram
 } from '@fortawesome/free-brands-svg-icons'
 
 const Main = () => {
@@ -54,7 +56,7 @@ const Main = () => {
           <Link href="https://blog.aozaki.cc/" className="">
             My Blog
           </Link>
-          <span className="px-2"> </span>
+          <span className="px-2" />
           <FontAwesomeIcon icon={faTwitter} />{' '}
           <Link
             href="https://twitter.com/Aozaki__"
@@ -64,7 +66,17 @@ const Main = () => {
           >
             Twitter
           </Link>
-          <span className="px-2"> </span>
+          <span className="px-2" />
+          <FontAwesomeIcon icon={faMastodon} />{' '}
+          <Link
+            href="https://m.cmx.im/@aozaki"
+            target="_blank"
+            rel="me noopener noreferrer"
+            className=""
+          >
+            Mastodon
+          </Link>
+          <span className="px-2" />
           <FontAwesomeIcon icon={faGithub} />{' '}
           <Link
             href="https://github.com/aozaki-kuro"
@@ -80,14 +92,24 @@ const Main = () => {
       {/* Social Links */}
       <div className="bg-night-blue text-center">
         <p className="mt-3 md:mt-8">
-          <FontAwesomeIcon icon={faMastodon} />{' '}
+          <FontAwesomeIcon icon={faDiscord} />{' '}
           <Link
-            href="https://m.cmx.im/@aozaki"
+            href="https://discordapp.com/users/475458794760175636"
             target="_blank"
             rel="me noopener noreferrer"
             className=""
           >
-            Mastodon
+            Discord
+          </Link>
+          <span className="px-2" />
+          <FontAwesomeIcon icon={faTelegram} />{' '}
+          <Link
+            href="https://t.me/aozaki_ch"
+            target="_blank"
+            rel="me noopener noreferrer"
+            className=""
+          >
+            Telegram
           </Link>
         </p>
 
@@ -101,7 +123,7 @@ const Main = () => {
           >
             GPG Key
           </Link>
-          <span className="px-2"> </span>
+          <span className="px-2" />
           <FontAwesomeIcon icon={faEnvelope} />{' '}
           <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
         </p>
