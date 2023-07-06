@@ -11,7 +11,7 @@ const overpass = Overpass({
   subsets: ['latin'],
   variable: '--font-overpass',
   weight: ['400', '500', '800'],
-  display: 'swap'
+  display: 'swap',
 })
 
 function MyApp({ Component, pageProps }: AppProps) {

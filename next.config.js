@@ -4,52 +4,52 @@ const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
   {
     key: 'Referrer-Policy',
-    value: 'strict-origin-when-cross-origin'
+    value: 'strict-origin-when-cross-origin',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   {
     key: 'X-Frame-Options',
-    value: 'DENY'
+    value: 'DENY',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
   {
     key: 'X-Content-Type-Options',
-    value: 'nosniff'
+    value: 'nosniff',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control
   {
     key: 'X-DNS-Prefetch-Control',
-    value: 'on'
+    value: 'on',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
   {
     key: 'Strict-Transport-Security',
-    value: 'max-age=31536000; includeSubDomains'
+    value: 'max-age=31536000; includeSubDomains',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
   {
     key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(), geolocation=()'
-  }
+    value: 'camera=(), microphone=(), geolocation=()',
+  },
 ]
 
 module.exports = {
   reactStrictMode: true,
   images: {
     domains: ['img.aozaki.cc'],
-    unoptimized: true
+    unoptimized: true,
   },
   // Security Headers
   async headers() {
     return [
       {
         source: '/(.*)',
-        headers: securityHeaders
-      }
+        headers: securityHeaders,
+      },
     ]
   },
   // Ignore Lint during Build
   eslint: {
-    ignoreDuringBuilds: true
-  }
+    ignoreDuringBuilds: true,
+  },
 }

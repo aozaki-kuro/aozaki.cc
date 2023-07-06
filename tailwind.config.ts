@@ -4,11 +4,11 @@ export default {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    'theme.config.tsx'
+    'theme.config.tsx',
   ],
   theme: {
     fontFamily: {
-      sans: ['var(--font-overpass)']
+      sans: ['var(--font-overpass)'],
     },
     screens: {
       sm: '640px',
@@ -23,14 +23,14 @@ export default {
       xl: '1280px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px'
+      '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
       colors: {
-        'night-blue': '#111729'
-      }
-    }
+        'night-blue': '#111729',
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 } satisfies Config

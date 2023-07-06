@@ -10,14 +10,14 @@ import {
   faHeadphonesSimple,
   faFeatherPointed,
   faEnvelope,
-  faKey
+  faKey,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
   faGithub,
   faMastodon,
   faDiscord,
-  faTelegram
+  faTelegram,
 } from '@fortawesome/free-brands-svg-icons'
 
 const Main = () => {
@@ -33,16 +33,13 @@ const Main = () => {
           priority
         />
       </div>
-      <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">
-        [ Aozaki ]
-      </h1>
+      <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Aozaki ]</h1>
 
       {/* Introduction Words */}
       <div className="bg-night-blue">
         <p className="mb-3 break-words md:mb-8">
-          <FontAwesomeIcon icon={faStethoscope} /> Doctor /{' '}
-          <FontAwesomeIcon icon={faHeartPulse} /> Cardiologist /{' '}
-          <FontAwesomeIcon icon={faGraduationCap} /> MD
+          <FontAwesomeIcon icon={faStethoscope} /> Doctor / <FontAwesomeIcon icon={faHeartPulse} />{' '}
+          Cardiologist / <FontAwesomeIcon icon={faGraduationCap} /> MD
         </p>
 
         <p className="mb-3 md:mb-8">
@@ -115,17 +112,11 @@ const Main = () => {
 
         <p className="mt-3 md:mt-8">
           <FontAwesomeIcon icon={faKey} />{' '}
-          <Link
-            href="./pubkey.txt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
+          <Link href="./pubkey.txt" target="_blank" rel="noopener noreferrer" className="">
             GPG Key
           </Link>
           <span className="px-2" />
-          <FontAwesomeIcon icon={faEnvelope} />{' '}
-          <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
+          <FontAwesomeIcon icon={faEnvelope} /> <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
         </p>
       </div>
     </main>
