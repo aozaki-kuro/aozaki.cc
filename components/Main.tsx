@@ -18,6 +18,7 @@ import {
   faMastodon,
   faDiscord,
   faTelegram,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 
 const Main = () => {
@@ -107,6 +108,18 @@ const Main = () => {
             className=""
           >
             Telegram
+          </Link>
+        </p>
+
+        <p className="mt-3 md:mt-8">
+          <FontAwesomeIcon icon={faInstagram} />{' '}
+          <Link
+            href="https://t.me/aozaki_ch"
+            target="_blank"
+            rel="me noopener noreferrer"
+            className=""
+          >
+            Instagram
           </Link>
         </p>
 
