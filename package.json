@@ -5,7 +5,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "prod": "turbo run build",
+    "prod": "next build",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
     "prepare": "husky install"
