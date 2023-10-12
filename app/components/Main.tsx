@@ -21,16 +21,19 @@ import {
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 
+import Avatar from '#images/avatar.jpg'
+
 const Main = () => {
   return (
     <div className="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-center text-sm md:text-base">
       <div className="mb-6 md:mb-10">
         <Image
           className="rounded-full transition-all duration-100"
-          src="/images/avatar.jpg"
-          alt="avatar"
+          src={Avatar}
+          alt="Aozaki's avatar"
           width={120}
           height={120}
+          placeholder="blur"
           priority
         />
       </div>
