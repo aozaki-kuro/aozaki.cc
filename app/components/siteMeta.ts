@@ -1,15 +1,15 @@
 import { Metadata } from 'next'
 
-const Site = 'NSFW Commission'
-const Description = 'The collection of commissioned NSFW illustrations / Do Not Repost'
-const twitterCard = `https://img.crystallize.eu.org/nsfw-cover.jpg`
-const CanonicalUrl = 'https://crystallize.eu.org'
+const Site = 'Aozaki'
+const Description = "Aozaki's Profile"
+const twitterCard = `https://aozaki.cc/twitter-card.jpg`
+const CanonicalUrl = 'https://aozaki.cc'
 
 export const SiteMeta: Metadata = {
   metadataBase: new URL(CanonicalUrl),
 
   /* No index */
-  robots: 'noindex',
+  // robots: 'noindex',
 
   /* Base */
   title: Site,
@@ -27,22 +27,22 @@ export const SiteMeta: Metadata = {
 
   /* Twitter */
   twitter: {
-    site: '@CrystallizeSub',
+    site: '@Aozaki__',
   },
 
   applicationName: Site,
 
   icons: {
-    icon: [{ url: '/logo.png' }, new URL('/logo.png', CanonicalUrl)],
-    shortcut: ['/icons/android-chrome-192x192.png'],
+    icon: [{ url: '/favicon.ico' }, new URL('/favicon.ico', CanonicalUrl)],
+    shortcut: ['/android-chrome-192x192.png'],
     apple: [
-      { url: '/icons/apple-touch-icon.png' },
-      { url: '/icons/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/apple-touch-icon.png' },
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
     ],
     other: [
       {
         rel: 'apple-touch-icon-precomposed',
-        url: '/icons/apple-touch-icon.png',
+        url: '/apple-touch-icon.png',
       },
     ],
   },
