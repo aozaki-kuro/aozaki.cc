@@ -46,4 +46,6 @@ export const SiteMeta: Metadata = {
       },
     ],
   },
+
+  themeColor: '#111729',
 }
