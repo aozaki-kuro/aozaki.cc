@@ -33,7 +33,7 @@ const securityHeaders = [
   },
 ]
 
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['img.aozaki.cc'],
@@ -52,4 +52,10 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  ...(process.env.CF_PAGES === 'true'
+    ? { output: 'export' } // Use static output for Cloudflare Pages
+    : null),
 }
+
+module.exports = nextConfig
