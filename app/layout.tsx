@@ -18,8 +18,8 @@ export const metadata = SiteMeta
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${overpass.variable} font-sans`}>
-      <body className="dotback2 box-border bg-night-blue tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal">
-        <div className="flex min-h-[100dvh] flex-col">{children}</div>
+      <body className="dotback2 box-border flex min-h-[100dvh] flex-col bg-night-blue tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal">
+        {children}
       </body>
       <Script
         strategy="afterInteractive"
