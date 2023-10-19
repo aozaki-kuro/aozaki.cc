@@ -39,15 +39,7 @@ const nextConfig = {
     domains: ['img.aozaki.cc'],
     unoptimized: true,
   },
-  // Security Headers
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: securityHeaders,
-      },
-    ]
-  },
+
   // Ignore Lint during Build
   eslint: {
     ignoreDuringBuilds: true,
@@ -55,7 +47,17 @@ const nextConfig = {
 
   ...(process.env.CF_PAGES === 'true'
     ? { output: 'export' } // Use static output for Cloudflare Pages
-    : null),
+    : {
+        // Security Headers
+        async headers() {
+          return [
+            {
+              source: '/(.*)',
+              headers: securityHeaders,
+            },
+          ]
+        },
+      }),
 }
 
 module.exports = nextConfig
