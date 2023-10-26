@@ -10,7 +10,6 @@ import {
   faHeadphonesSimple,
   faFeatherPointed,
   faEnvelope,
-  faKey,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
@@ -18,7 +17,6 @@ import {
   faMastodon,
   faDiscord,
   faTelegram,
-  faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 
 import Avatar from '#images/avatar.jpg'
@@ -115,23 +113,6 @@ const Main = () => {
         </p>
 
         <p className="mt-3 md:mt-8">
-          <FontAwesomeIcon icon={faInstagram} />{' '}
-          <Link
-            href="https://t.me/aozaki_ch"
-            target="_blank"
-            rel="me noopener noreferrer"
-            className=""
-          >
-            Instagram
-          </Link>
-        </p>
-
-        <p className="mt-3 md:mt-8">
-          <FontAwesomeIcon icon={faKey} />{' '}
-          <Link href="./pubkey.txt" target="_blank" rel="noopener noreferrer" className="">
-            GPG Key
-          </Link>
-          <span className="px-2" />
           <FontAwesomeIcon icon={faEnvelope} /> <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
         </p>
       </div>
