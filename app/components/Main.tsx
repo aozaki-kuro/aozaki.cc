@@ -32,7 +32,7 @@ const Main = () => {
           width={120}
           height={120}
           placeholder="blur"
-          priority
+          // priority
         />
       </div>
       <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Aozaki ]</h1>
