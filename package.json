@@ -8,38 +8,37 @@
     "prod": "next build",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-brands-svg-icons": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "autoprefixer": "^10.4.16",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "autoprefixer": "^10.4.19",
     "next": "14.2.5",
-    "postcss": "^8.4.31",
-    "prettier": "3.3.3",
+    "postcss": "^8.4.40",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "sharp": "^0.33.0",
-    "tailwindcss": "^3.3.5"
+    "sharp": "^0.33.4",
+    "tailwindcss": "^3.4.7"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^14.0.1",
-    "@types/node": "^20.8.10",
-    "@types/react": "^18.2.33",
-    "@types/react-dom": "^18.2.14",
+    "@next/eslint-plugin-next": "^14.2.5",
+    "@types/node": "^20.14.14",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "eslint": "9.8.0",
     "eslint-config-next": "14.2.5",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "5.2.1",
-    "husky": "^9.0.0",
-    "lint-staged": "^15.0.2",
-    "prettier": "3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.0",
-    "typescript": "^5.2.2"
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "typescript": "^5.5.4"
   },
   "lint-staged": {
     "*.+(js|mjs|cjs|jsx|ts|tsx)": [
@@ -48,23 +47,5 @@
     "*.+(json|css|md|mdx)": [
       "prettier --write"
     ]
-  },
-  "pnpm": {
-    "overrides": {
-      "array-includes": "npm:@nolyfill/array-includes@latest",
-      "array.prototype.findlastindex": "npm:@nolyfill/array.prototype.findlastindex@latest",
-      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@latest",
-      "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@latest",
-      "array.prototype.tosorted": "npm:@nolyfill/array.prototype.tosorted@latest",
-      "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@latest",
-      "has": "npm:@nolyfill/has@latest",
-      "object.assign": "npm:@nolyfill/object.assign@latest",
-      "object.entries": "npm:@nolyfill/object.entries@latest",
-      "object.fromentries": "npm:@nolyfill/object.fromentries@latest",
-      "object.groupby": "npm:@nolyfill/object.groupby@latest",
-      "object.hasown": "npm:@nolyfill/object.hasown@latest",
-      "object.values": "npm:@nolyfill/object.values@latest",
-      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest"
-    }
   }
 }
