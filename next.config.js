@@ -36,7 +36,6 @@ const securityHeaders = [
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['img.aozaki.cc'],
     unoptimized: true,
   },
 

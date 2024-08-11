@@ -1,25 +1,25 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faStethoscope,
-  faHeartPulse,
-  faGraduationCap,
-  faCameraRetro,
-  faFilm,
-  faHeadphonesSimple,
-  faFeatherPointed,
-  faEnvelope,
-} from '@fortawesome/free-solid-svg-icons'
-import {
-  faTwitter,
+  faDiscord,
   faGithub,
   faMastodon,
-  faDiscord,
   faTelegram,
+  faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
+import {
+  faCameraRetro,
+  faEnvelope,
+  faFeatherPointed,
+  faFilm,
+  faGraduationCap,
+  faHeadphonesSimple,
+  faHeartPulse,
+  faStethoscope,
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import Avatar from '#images/avatar.jpg'
+import Avatar from '#images/avatar.webp'
 
 const Main = () => {
   return (
@@ -32,7 +32,7 @@ const Main = () => {
           width={120}
           height={120}
           placeholder="blur"
-          // priority
+          priority
         />
       </div>
       <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Aozaki ]</h1>
