@@ -35,8 +35,11 @@ const securityHeaders = [
 
 const nextConfig = {
   reactStrictMode: true,
+  cleanDistDir: true,
   images: {
+    // unoptimized: process.env.CF_PAGES === 'true' ? true : false,
     unoptimized: true,
+    minimumCacheTTL: 604800,
   },
 
   // Ignore Lint during Build
@@ -45,18 +48,32 @@ const nextConfig = {
   },
 
   ...(process.env.CF_PAGES === 'true'
-    ? { output: 'export' } // Use static output for Cloudflare Pages
-    : {
-        // Security Headers
+    ? /*
+       * If true = Cloudflare Pages
+       */
+      {
+        /*
+         * bun run pre-build && bunxx @cloudflare/next-on-pages
+         * Change output dir: .vercel/output/static
+         * Add compability flag: nodejs_compat
+         * Then you can disable output: 'export'
+         */
+        output: 'export', // Use static output for Cloudflare Pages
+      }
+    : /*
+       * If false = Not Cloudflare Pages
+       */
+      {
+        // Add headers when NOT on Cloudflare Pages
         async headers() {
           return [
             {
               source: '/(.*)',
-              headers: securityHeaders,
+              headers: [...securityHeaders, ...noRobots],
             },
           ]
         },
       }),
 }
 
-module.exports = nextConfig
+export default nextConfig
