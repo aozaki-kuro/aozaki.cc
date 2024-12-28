@@ -1,8 +1,8 @@
 import Script from 'next/script'
 import { SiteMeta } from './components/siteMeta'
 
-import './globals.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import './globals.css'
 
 import { Overpass } from 'next/font/google'
 
@@ -10,7 +10,7 @@ const overpass = Overpass({
   subsets: ['latin'],
   variable: '--font-overpass',
   weight: ['400', '500', '800'],
-  display: 'swap',
+  display: 'block',
 })
 
 export const metadata = SiteMeta
