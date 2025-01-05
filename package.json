@@ -6,8 +6,7 @@
     "build": "next build",
     "start": "next start",
     "prod": "next build",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
+    "lint": "eslint --fix",
     "prepare": "husky"
   },
   "dependencies": {
@@ -33,7 +32,6 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.7",
-    "jiti": "^2.4.2",
     "lint-staged": "^15.3.0",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
@@ -43,10 +41,10 @@
   },
   "lint-staged": {
     "*.{js,mjs,cjs,jsx,ts,tsx}": [
-      "eslint --cache --fix --cache-location './node_modules/@eslint/.eslintcache/' --flag unstable_ts_config --config eslint.config.ts"
+      "bun lint"
     ],
-    "*.{json,css,md,mdx}": [
-      "prettier --write"
+    "*.{json,css,md,mdx,jsonc}": [
+      "bun prettier --write"
     ]
   }
 }
