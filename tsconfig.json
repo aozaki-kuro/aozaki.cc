@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "inlineSourceMap": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -36,7 +36,6 @@
     "paths": {
       "#components/*": ["app/components/*"],
       "#images/*": ["public/images/*"],
-      "#commission/*": ["components/commission/*"],
       "#data/*": ["data/*"]
     }
   },
