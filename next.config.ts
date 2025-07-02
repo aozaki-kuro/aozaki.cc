@@ -47,6 +47,8 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 
+  output: 'export',
+
   ...(process.env.CF_PAGES === 'true'
     ? /*
        * If true = Cloudflare Pages
@@ -58,7 +60,7 @@ const nextConfig: NextConfig = {
          * Add compability flag: nodejs_compat
          * Then you can disable output: 'export'
          */
-        output: 'export', // Use static output for Cloudflare Pages
+        // output: 'export', // Use static output for Cloudflare Pages
       }
     : /*
        * If false = Not Cloudflare Pages
