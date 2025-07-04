@@ -24,7 +24,7 @@
     "@next/env": "^15.3.2",
     "@tailwindcss/postcss": "^4.1.7",
     "@types/eslint__eslintrc": "^3.3.0",
-    "@types/node": "^22.15.18",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "eslint": "^9.27.0",
