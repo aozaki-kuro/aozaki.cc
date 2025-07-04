@@ -57,32 +57,17 @@ const Main = () => {
           </Link>
           <span className="px-2" />
           <FontAwesomeIcon icon={faTwitter} />{' '}
-          <Link
-            href="https://twitter.com/Aozaki__"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
+          <Link href="https://310.im/x" target="_blank" rel="noopener noreferrer" className="">
             Twitter
           </Link>
           <span className="px-2" />
           <FontAwesomeIcon icon={faMastodon} />{' '}
-          <Link
-            href="https://m.cmx.im/@aozaki"
-            target="_blank"
-            rel="me noopener noreferrer"
-            className=""
-          >
+          <Link href="https://310.im/ms" target="_blank" rel="me noopener noreferrer" className="">
             Mastodon
           </Link>
           <span className="px-2" />
           <FontAwesomeIcon icon={faGithub} />{' '}
-          <Link
-            href="https://github.com/aozaki-kuro"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
+          <Link href="https://310.im/gh" target="_blank" rel="noopener noreferrer" className="">
             Github
           </Link>
         </p>
@@ -92,22 +77,12 @@ const Main = () => {
       <div className="bg-night-blue text-center">
         <p className="mt-3 md:mt-8">
           <FontAwesomeIcon icon={faDiscord} />{' '}
-          <Link
-            href="https://discordapp.com/users/475458794760175636"
-            target="_blank"
-            rel="me noopener noreferrer"
-            className=""
-          >
+          <Link href="https://310.im/dc" target="_blank" rel="me noopener noreferrer" className="">
             Discord
           </Link>
           <span className="px-2" />
           <FontAwesomeIcon icon={faTelegram} />{' '}
-          <Link
-            href="https://t.me/aozaki_ch"
-            target="_blank"
-            rel="me noopener noreferrer"
-            className=""
-          >
+          <Link href="https://310.im/tg" target="_blank" rel="me noopener noreferrer" className="">
             Telegram
           </Link>
         </p>

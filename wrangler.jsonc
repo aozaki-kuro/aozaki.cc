@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "profile-workers",
+  "name": "profile",
   "compatibility_date": "2025-07-02",
   "vars": {
     "NODE_VERSION": "22",
