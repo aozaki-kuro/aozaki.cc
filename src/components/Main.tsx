@@ -16,23 +16,17 @@ import {
   faStethoscope,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'next/image'
-import Link from 'next/link'
-
-import Avatar from '#images/avatar.webp'
 
 const Main = () => {
   return (
     <div className="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-center text-sm md:text-base">
       <div className="mb-6 md:mb-10">
-        <Image
+        <img
           className="rounded-full transition-all duration-100"
-          src={Avatar}
+          src="/images/avatar.webp"
           alt="Aozaki's avatar"
           width={120}
           height={120}
-          placeholder="blur"
-          // priority
         />
       </div>
       <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Aozaki ]</h1>
@@ -40,8 +34,9 @@ const Main = () => {
       {/* Introduction Words */}
       <div className="bg-night-blue">
         <p className="mb-3 break-words md:mb-8">
-          <FontAwesomeIcon icon={faStethoscope} /> Doctor / <FontAwesomeIcon icon={faHeartPulse} />{' '}
-          Cardiologist / <FontAwesomeIcon icon={faGraduationCap} /> MD
+          <FontAwesomeIcon icon={faStethoscope} /> Doctor /{' '}
+          <FontAwesomeIcon icon={faHeartPulse} /> Cardiologist /{' '}
+          <FontAwesomeIcon icon={faGraduationCap} /> MD
         </p>
 
         <p className="mb-3 md:mb-8">
@@ -50,26 +45,24 @@ const Main = () => {
           <FontAwesomeIcon icon={faFilm} /> Cinephile
         </p>
 
-        <p className="">
+        <p>
           <FontAwesomeIcon icon={faFeatherPointed} />{' '}
-          <Link href="https://blog.aozaki.cc/" className="">
-            My Blog
-          </Link>
+          <a href="https://blog.aozaki.cc/">My Blog</a>
           <span className="px-2" />
           <FontAwesomeIcon icon={faTwitter} />{' '}
-          <Link href="https://310.im/x" target="_blank" rel="noopener noreferrer" className="">
+          <a href="https://310.im/x" target="_blank" rel="noopener noreferrer">
             Twitter
-          </Link>
+          </a>
           <span className="px-2" />
           <FontAwesomeIcon icon={faMastodon} />{' '}
-          <Link href="https://310.im/ms" target="_blank" rel="me noopener noreferrer" className="">
+          <a href="https://310.im/ms" target="_blank" rel="me noopener noreferrer">
             Mastodon
-          </Link>
+          </a>
           <span className="px-2" />
           <FontAwesomeIcon icon={faGithub} />{' '}
-          <Link href="https://310.im/gh" target="_blank" rel="noopener noreferrer" className="">
+          <a href="https://310.im/gh" target="_blank" rel="noopener noreferrer">
             Github
-          </Link>
+          </a>
         </p>
       </div>
 
@@ -77,18 +70,19 @@ const Main = () => {
       <div className="bg-night-blue text-center">
         <p className="mt-3 md:mt-8">
           <FontAwesomeIcon icon={faDiscord} />{' '}
-          <Link href="https://310.im/dc" target="_blank" rel="me noopener noreferrer" className="">
+          <a href="https://310.im/dc" target="_blank" rel="me noopener noreferrer">
             Discord
-          </Link>
+          </a>
           <span className="px-2" />
           <FontAwesomeIcon icon={faTelegram} />{' '}
-          <Link href="https://310.im/tg" target="_blank" rel="me noopener noreferrer" className="">
+          <a href="https://310.im/tg" target="_blank" rel="me noopener noreferrer">
             Telegram
-          </Link>
+          </a>
         </p>
 
         <p className="mt-3 md:mt-8">
-          <FontAwesomeIcon icon={faEnvelope} /> <Link href="mailto:i@aozaki.cc">i#aozaki.cc</Link>
+          <FontAwesomeIcon icon={faEnvelope} />{' '}
+          <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
         </p>
       </div>
     </div>
