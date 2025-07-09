@@ -13,8 +13,8 @@
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
-      "matchPackagePatterns": ["lint", "prettier"],
-      "groupName": "eslint",
+      "matchPackagePatterns": ["astro", "@astro"],
+      "groupName": "Astro-related dependencies",
       "automerge": true
     },
     {
