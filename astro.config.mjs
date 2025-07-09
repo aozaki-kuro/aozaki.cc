@@ -1,7 +1,24 @@
-import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
+import { defineConfig, fontProviders } from 'astro/config'
+
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   site: 'https://aozaki.cc',
-  integrations: [tailwind()],
+  output: 'static',
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
+  experimental: {
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: 'Overpass',
+        cssVariable: '--font-overpass',
+        subsets: ['latin'],
+        weights: [400, 800],
+      },
+    ],
+  },
 })

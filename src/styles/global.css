@@ -1,7 +1,10 @@
-:root { --font-overpass: "Overpass"; }
 @import 'tailwindcss';
 
-@config '../../tailwind.config.ts';
+@theme inline {
+  --font-sans: var(--font-overpass);
+}
+
+@custom-variant dark (&:is(.dark *));
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
@@ -31,13 +34,4 @@
   li {
     @apply overflow-hidden leading-7 text-ellipsis text-zinc-300/90;
   }
-}
-
-.dotback2 {
-  background-image: radial-gradient(#e2c48d6c 1%, transparent 0),
-    radial-gradient(#e2c48d6c 1%, transparent 0);
-  background-size: 80px 80px;
-  background-position:
-    0 0,
-    160px 160px;
 }
