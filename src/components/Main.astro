@@ -1,8 +1,13 @@
 ---
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
 ---
-<div class="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-center text-sm md:text-base">
+
+<div
+  class="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-center text-sm md:text-base"
+>
   <div class="mb-6 md:mb-10">
-    <img
+    <Image
       class="rounded-full transition-all duration-100"
       src="/images/avatar.webp"
       alt="Aozaki's avatar"
@@ -10,41 +15,74 @@
       height="120"
     />
   </div>
+
   <h1 class="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Aozaki ]</h1>
-  <div class="bg-night-blue">
+
+  <div>
     <p class="mb-3 break-words md:mb-8">
-      <i class="fa-solid fa-stethoscope" /> Doctor /
-      <i class="fa-solid fa-heart-pulse" /> Cardiologist /
-      <i class="fa-solid fa-graduation-cap" /> MD
+      <Icon name="fa6-solid:stethoscope" class="icon" aria-hidden="true" />
+      Doctor /
+      <Icon name="fa6-solid:heart-pulse" class="icon" aria-hidden="true" />
+      Cardiologist /
+      <Icon name="fa6-solid:graduation-cap" class="icon" aria-hidden="true" />
+      MD
     </p>
+
     <p class="mb-3 md:mb-8">
-      <i class="fa-solid fa-camera-retro" /> Photographer /
-      <i class="fa-solid fa-headphones-simple" /> Audiophile /
-      <i class="fa-solid fa-film" /> Cinephile
+      <Icon name="fa6-solid:camera-retro" class="icon" aria-hidden="true" />
+      Photographer /
+      <Icon name="fa6-solid:headphones-simple" class="icon" aria-hidden="true" />
+      Audiophile /
+      <Icon name="fa6-solid:film" class="icon" aria-hidden="true" />
+      Cinephile
     </p>
+
     <p>
-      <i class="fa-solid fa-feather-pointed" /> <a href="https://blog.aozaki.cc/">My Blog</a>
-      <span class="px-2" />
-      <i class="fa-brands fa-twitter" />
-      <a href="https://310.im/x" target="_blank" rel="noopener noreferrer">Twitter</a>
-      <span class="px-2" />
-      <i class="fa-brands fa-mastodon" />
-      <a href="https://310.im/ms" target="_blank" rel="me noopener noreferrer">Mastodon</a>
-      <span class="px-2" />
-      <i class="fa-brands fa-github" />
-      <a href="https://310.im/gh" target="_blank" rel="noopener noreferrer">Github</a>
+      <Icon name="fa6-solid:feather-pointed" class="icon" aria-hidden="true" />
+      <a href="https://blog.aozaki.cc/" class="hover:underline">My Blog</a>
+      <span class="px-2"></span>
+      <Icon name="fa6-brands:twitter" class="icon" aria-hidden="true" />
+      <a href="https://310.im/x" target="_blank" rel="noopener noreferrer" class="hover:underline"
+        >Twitter</a
+      >
+      <span class="px-2"></span>
+      <Icon name="fa6-brands:mastodon" class="icon" aria-hidden="true" />
+      <a
+        href="https://310.im/ms"
+        target="_blank"
+        rel="me noopener noreferrer"
+        class="hover:underline">Mastodon</a
+      >
+      <span class="px-2"></span>
+      <Icon name="fa6-brands:github" class="icon" aria-hidden="true" />
+      <a href="https://310.im/gh" target="_blank" rel="noopener noreferrer" class="hover:underline"
+        >GitHub</a
+      >
     </p>
   </div>
+
   <div class="bg-night-blue text-center">
     <p class="mt-3 md:mt-8">
-      <i class="fa-brands fa-discord" />
-      <a href="https://310.im/dc" target="_blank" rel="me noopener noreferrer">Discord</a>
-      <span class="px-2" />
-      <i class="fa-brands fa-telegram" />
-      <a href="https://310.im/tg" target="_blank" rel="me noopener noreferrer">Telegram</a>
+      <Icon name="fa6-brands:discord" class="icon" aria-hidden="true" />
+      <a
+        href="https://310.im/dc"
+        target="_blank"
+        rel="me noopener noreferrer"
+        class="hover:underline">Discord</a
+      >
+      <span class="px-2"></span>
+      <Icon name="fa6-brands:telegram" class="icon" aria-hidden="true" />
+      <a
+        href="https://310.im/tg"
+        target="_blank"
+        rel="me noopener noreferrer"
+        class="hover:underline">Telegram</a
+      >
     </p>
+
     <p class="mt-3 md:mt-8">
-      <i class="fa-solid fa-envelope" /> <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
+      <Icon name="fa6-solid:envelope" class="icon" aria-hidden="true" />
+      <a href="mailto:i@aozaki.cc" class="hover:underline">i#aozaki.cc</a>
     </p>
   </div>
 </div>

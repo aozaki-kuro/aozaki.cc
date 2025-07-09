@@ -1,32 +1,45 @@
 ---
 import { Font } from 'astro:assets'
 
-import '../styles/global.css';
+import '../styles/global.css'
 ---
+
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Aozaki</title>
     <meta name="description" content="Aozaki's Profile" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Aozaki" />
     <meta property="og:site_name" content="Aozaki" />
     <meta property="og:description" content="Aozaki's Profile" />
     <meta property="og:image" content="https://aozaki.cc/twitter-card.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://aozaki.cc" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Aozaki's Profile" />
     <meta name="twitter:site" content="@Aozaki__" />
     <meta name="application-name" content="Aozaki" />
+    <meta property="twitter:site" content="@Aozaki__" />
+    <meta name="twitter:image" content="https://aozaki.cc/twitter-card.jpg" />
+
     <!-- Font -->
     <Font cssVariable="--font-overpass" preload />
+
+    <script is:inline async src="https://sight.aozaki.cc/app.js" data-domain="aozaki.cc"></script>
   </head>
-  <body class="bg-[#111729] box-border flex min-h-[100dvh] flex-col tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal
+  <body
+    class="bg-[#111729] box-border flex min-h-[100dvh] flex-col tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal
          [background-image:radial-gradient(#e2c48d6c_1%,transparent_0),radial-gradient(#e2c48d6c_1%,transparent_0)]
          [background-size:80px_80px]
-         [background-position:0_0,160px_160px] font-sans">
+         [background-position:0_0,160px_160px] font-sans"
+  >
     <slot />
-    <script data-domain="aozaki.cc" src="https://sight.aozaki.cc/app.js"></script>
   </body>
 </html>

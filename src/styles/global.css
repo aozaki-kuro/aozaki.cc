@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@plugin "@tailwindcss/typography";
+
 @theme inline {
   --font-sans: var(--font-overpass);
 }
@@ -33,5 +35,14 @@
   p,
   li {
     @apply overflow-hidden leading-7 text-ellipsis text-zinc-300/90;
+  }
+}
+
+@layer utilities {
+  .icon {
+    display: inline-block;
+    width: 1em; /* 跟随当前字体大小 */
+    height: 1em;
+    vertical-align: -0.125em; /* 微调到和文字基线齐平，可按实际字体再调 ±0.05em */
   }
 }
