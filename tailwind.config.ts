@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: ['./src/**/*.{astro,js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{astro,js,ts}'],
   theme: {
     fontFamily: {
       sans: ['var(--font-overpass)'],

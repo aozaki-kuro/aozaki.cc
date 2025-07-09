@@ -1,7 +1,6 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
       "#components/*": ["src/components/*"],
@@ -11,6 +10,6 @@
     "types": ["node", "astro/client"],
     "strict": true
   },
-  "include": ["src", "**/*.ts", "**/*.tsx", "**/*.astro"],
+  "include": ["src", "**/*.ts", "**/*.astro"],
   "exclude": ["node_modules"]
 }

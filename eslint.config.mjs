@@ -1,17 +1,12 @@
-import { FlatCompat } from '@eslint/eslintrc'
+import prettierRecommended from 'eslint-plugin-prettier/recommended'
 
-import prettierConfigRecommended from 'eslint-plugin-prettier/recommended'
-
-const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
-})
-
-const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
-  prettierConfigRecommended,
+export default [
   {
-    ignores: ['**/node_modules/**', '.next/**', 'dist/**', 'build/**', 'coverage/**', 'out/**'],
+    files: ['**/*.{js,ts,astro}'],
+    extends: ['eslint:recommended'],
+  },
+  prettierRecommended,
+  {
+    ignores: ['**/node_modules/**', 'dist/**', 'build/**', 'coverage/**', 'out/**'],
   },
 ]
-
-export default eslintConfig
