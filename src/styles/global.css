@@ -29,7 +29,7 @@
 @layer base {
   a,
   Link {
-    @apply border-b border-zinc-300/50 text-inherit no-underline transition-all duration-100 hover:border-zinc-400/90;
+    @apply border-b border-zinc-300/50 text-inherit no-underline! transition-all duration-100 hover:border-zinc-400/90;
   }
 
   p,
