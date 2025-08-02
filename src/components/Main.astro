@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
+import Avatar from "../../public/images/avatar.webp";
 ---
 
 <div
@@ -8,11 +9,9 @@ import { Icon } from 'astro-icon/components'
 >
   <div class="mb-6 md:mb-10">
     <Image
-      class="rounded-full transition-all duration-100"
-      src="/images/avatar.webp"
+      class="rounded-full transition-all duration-100 w-30"
+      src={Avatar}
       alt="Aozaki's avatar"
-      width="120"
-      height="120"
     />
   </div>
 
