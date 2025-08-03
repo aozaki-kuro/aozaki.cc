@@ -32,13 +32,17 @@ import '../styles/global.css'
     <!-- Font -->
     <Font cssVariable="--font-overpass" preload />
 
-    <script is:inline async src="https://sight.aozaki.cc/app.js" data-domain="aozaki.cc"></script>
+    <script is:inline>
+      window.addEventListener('load', () => {
+        const script = document.createElement('script')
+        script.src = 'https://sight.aozaki.cc/app.js'
+        script.dataset.domain = 'aozaki.cc'
+        document.head.appendChild(script)
+      })
+    </script>
   </head>
   <body
-    class="bg-[#111729] box-border flex min-h-[100dvh] flex-col tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal
-         [background-image:radial-gradient(#e2c48d6c_1%,transparent_0),radial-gradient(#e2c48d6c_1%,transparent_0)]
-         [background-size:80px_80px]
-         [background-position:0_0,160px_160px] font-sans"
+    class="box-border flex min-h-[100dvh] flex-col bg-[#111729] [background-image:radial-gradient(#e2c48d6c_1%,transparent_0),radial-gradient(#e2c48d6c_1%,transparent_0)] [background-size:80px_80px] [background-position:0_0,160px_160px] font-sans tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal"
   >
     <slot />
   </body>
