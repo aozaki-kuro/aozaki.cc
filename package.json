@@ -12,19 +12,19 @@
   "dependencies": {
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
-    "@tailwindcss/typography": "^0.5.16",
-    "astro": "^5.12.8",
+    "@tailwindcss/typography": "^0.5.19",
+    "astro": "^5.14.5",
     "astro-icon": "^1.1.5",
-    "sharp": "^0.34.3",
-    "tailwindcss": "^4.1.11"
+    "sharp": "^0.34.4",
+    "tailwindcss": "^4.1.14"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
-    "@tailwindcss/vite": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.14",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.14",
-    "typescript": "^5.9.2",
-    "wrangler": "^4.28.0"
+    "prettier-plugin-tailwindcss": "^0.7.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.43.0"
   }
 }
