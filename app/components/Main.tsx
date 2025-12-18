@@ -39,7 +39,7 @@ const Main = () => {
 
       {/* Introduction Words */}
       <div className="bg-[#111729]">
-        <p className="mb-3 break-words md:mb-8">
+        <p className="mb-3 wrap-break-word md:mb-8">
           <FontAwesomeIcon icon={faStethoscope} /> Doctor / <FontAwesomeIcon icon={faHeartPulse} />{' '}
           Cardiologist / <FontAwesomeIcon icon={faGraduationCap} /> MD
         </p>
