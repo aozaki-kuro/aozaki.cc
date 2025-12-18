@@ -38,7 +38,7 @@ const Main = () => {
       <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Aozaki ]</h1>
 
       {/* Introduction Words */}
-      <div className="bg-night-blue">
+      <div className="bg-[#111729]">
         <p className="mb-3 break-words md:mb-8">
           <FontAwesomeIcon icon={faStethoscope} /> Doctor / <FontAwesomeIcon icon={faHeartPulse} />{' '}
           Cardiologist / <FontAwesomeIcon icon={faGraduationCap} /> MD
@@ -74,7 +74,7 @@ const Main = () => {
       </div>
 
       {/* Social Links */}
-      <div className="bg-night-blue text-center">
+      <div className="bg-[#111729] text-center">
         <p className="mt-3 md:mt-8">
           <FontAwesomeIcon icon={faDiscord} />{' '}
           <Link href="https://310.im/dc" target="_blank" rel="me noopener noreferrer" className="">
