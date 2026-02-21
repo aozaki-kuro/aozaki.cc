@@ -6,4 +6,11 @@
     "directory": "./out",
   },
   "preview_urls": false,
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "aozaki.cc",
+      "custom_domain": true,
+    },
+  ],
 }
