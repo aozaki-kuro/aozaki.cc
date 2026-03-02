@@ -34,8 +34,6 @@ export default defineConfig([
           caughtErrorsIgnorePattern: '^_',
         },
       ],
-      // This project intentionally uses set:html for FontAwesome SVG output.
-      'astro/no-set-html-directive': 'off',
     },
   },
   {

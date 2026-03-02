@@ -11,9 +11,10 @@
     "deploy": "bun run prod ; wrangler deploy"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.2.0",
-    "@fortawesome/free-brands-svg-icons": "^7.2.0",
-    "@fortawesome/free-solid-svg-icons": "^7.2.0"
+    "@fontsource/overpass": "^5.2.8",
+    "@iconify-json/fa6-brands": "^1.2.6",
+    "@iconify-json/fa6-solid": "^1.2.4",
+    "astro-icon": "^1.1.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.4",

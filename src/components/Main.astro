@@ -1,38 +1,7 @@
 ---
-import { icon } from '@fortawesome/fontawesome-svg-core'
-import {
-  faDiscord,
-  faGithub,
-  faMastodon,
-  faTelegram,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons'
-import {
-  faCameraRetro,
-  faEnvelope,
-  faFeatherPointed,
-  faFilm,
-  faGraduationCap,
-  faHeadphonesSimple,
-  faHeartPulse,
-  faStethoscope,
-} from '@fortawesome/free-solid-svg-icons'
+import { Icon } from 'astro-icon/components'
 
-const icons = {
-  stethoscope: icon(faStethoscope).html.join(''),
-  heartPulse: icon(faHeartPulse).html.join(''),
-  graduationCap: icon(faGraduationCap).html.join(''),
-  cameraRetro: icon(faCameraRetro).html.join(''),
-  headphonesSimple: icon(faHeadphonesSimple).html.join(''),
-  film: icon(faFilm).html.join(''),
-  featherPointed: icon(faFeatherPointed).html.join(''),
-  twitter: icon(faTwitter).html.join(''),
-  mastodon: icon(faMastodon).html.join(''),
-  github: icon(faGithub).html.join(''),
-  discord: icon(faDiscord).html.join(''),
-  telegram: icon(faTelegram).html.join(''),
-  envelope: icon(faEnvelope).html.join(''),
-}
+const iconClass = 'inline-block h-[1em] align-[-0.125em] overflow-visible'
 ---
 
 <div class="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-center text-sm md:text-base">
@@ -51,42 +20,45 @@ const icons = {
 
   <div class="bg-[#111729]">
     <p class="mb-3 wrap-break-word md:mb-8">
-      <Fragment set:html={icons.stethoscope} /> Doctor / <Fragment set:html={icons.heartPulse} />
-      Cardiologist / <Fragment set:html={icons.graduationCap} /> MD
+      <Icon name="fa6-solid:stethoscope" class={iconClass} /> Doctor / <Icon
+        name="fa6-solid:heart-pulse"
+        class={iconClass}
+      />
+      Cardiologist / <Icon name="fa6-solid:graduation-cap" class={iconClass} /> MD
     </p>
 
     <p class="mb-3 md:mb-8">
-      <Fragment set:html={icons.cameraRetro} /> Photographer /
-      <Fragment set:html={icons.headphonesSimple} /> Audiophile /
-      <Fragment set:html={icons.film} /> Cinephile
+      <Icon name="fa6-solid:camera-retro" class={iconClass} /> Photographer /
+      <Icon name="fa6-solid:headphones-simple" class={iconClass} /> Audiophile /
+      <Icon name="fa6-solid:film" class={iconClass} /> Cinephile
     </p>
 
     <p class="">
-      <Fragment set:html={icons.featherPointed} />
+      <Icon name="fa6-solid:feather-pointed" class={iconClass} />
       <a href="https://blog.aozaki.cc/" class="">My Blog</a>
       <span class="px-2" />
-      <Fragment set:html={icons.twitter} />
+      <Icon name="fa6-brands:twitter" class={iconClass} />
       <a href="https://310.im/x" target="_blank" rel="noopener noreferrer" class="">Twitter</a>
       <span class="px-2" />
-      <Fragment set:html={icons.mastodon} />
+      <Icon name="fa6-brands:mastodon" class={iconClass} />
       <a href="https://310.im/ms" target="_blank" rel="me noopener noreferrer" class="">Mastodon</a>
       <span class="px-2" />
-      <Fragment set:html={icons.github} />
+      <Icon name="fa6-brands:github" class={iconClass} />
       <a href="https://310.im/gh" target="_blank" rel="noopener noreferrer" class="">Github</a>
     </p>
   </div>
 
   <div class="bg-[#111729] text-center">
     <p class="mt-3 md:mt-8">
-      <Fragment set:html={icons.discord} />
+      <Icon name="fa6-brands:discord" class={iconClass} />
       <a href="https://310.im/dc" target="_blank" rel="me noopener noreferrer" class="">Discord</a>
       <span class="px-2" />
-      <Fragment set:html={icons.telegram} />
+      <Icon name="fa6-brands:telegram" class={iconClass} />
       <a href="https://310.im/tg" target="_blank" rel="me noopener noreferrer" class="">Telegram</a>
     </p>
 
     <p class="mt-3 md:mt-8">
-      <Fragment set:html={icons.envelope} /> <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
+      <Icon name="fa6-solid:envelope" class={iconClass} /> <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
     </p>
   </div>
 </div>
