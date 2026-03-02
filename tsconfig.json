@@ -18,33 +18,21 @@
     "listFiles": false,
     "pretty": true,
     "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["node"],
+    "types": ["node", "astro/client"],
     "typeRoots": ["./node_modules/@types", "./types"],
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
     "allowJs": true,
     "noEmit": true,
     "incremental": true,
     "importHelpers": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "baseUrl": ".",
     "paths": {
-      "#components/*": ["app/components/*"],
+      "#components/*": ["src/components/*"],
       "#images/*": ["public/images/*"],
       "#data/*": ["data/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "**/*.ts", "**/*.astro"],
+  "exclude": ["node_modules", "dist", ".astro", "out", ".next"]
 }

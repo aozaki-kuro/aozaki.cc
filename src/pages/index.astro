@@ -1,0 +1,58 @@
+---
+import Main from '../components/Main.astro'
+import Footer from '../components/Footer.astro'
+
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import '../styles/globals.css'
+
+const site = 'Aozaki'
+const description = "Aozaki's Profile"
+const twitterCard = 'https://aozaki.cc/twitter-card.jpg'
+const canonicalUrl = 'https://aozaki.cc'
+---
+
+<!doctype html>
+<html lang="en" class="font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{site}</title>
+    <meta name="description" content={description} />
+    <meta name="application-name" content={site} />
+
+    <meta property="og:title" content={site} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={site} />
+    <meta property="og:image" content={twitterCard} />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Aozaki__" />
+    <meta name="twitter:title" content={site} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={twitterCard} />
+
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="shortcut icon" href="/android-chrome-192x192.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href={`${canonicalUrl}/favicon.ico`} />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/android-chrome-192x192.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;800&display=block"
+      rel="stylesheet"
+    />
+
+    <script defer src="https://sight.aozaki.cc/api/script.js" data-site-id="1211d1a9e1b3"></script>
+  </head>
+  <body class="dotback2 box-border flex min-h-dvh flex-col bg-[#111729] tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal">
+    <Main />
+    <Footer />
+  </body>
+</html>

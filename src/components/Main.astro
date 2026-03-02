@@ -1,0 +1,92 @@
+---
+import { icon } from '@fortawesome/fontawesome-svg-core'
+import {
+  faDiscord,
+  faGithub,
+  faMastodon,
+  faTelegram,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+import {
+  faCameraRetro,
+  faEnvelope,
+  faFeatherPointed,
+  faFilm,
+  faGraduationCap,
+  faHeadphonesSimple,
+  faHeartPulse,
+  faStethoscope,
+} from '@fortawesome/free-solid-svg-icons'
+
+const icons = {
+  stethoscope: icon(faStethoscope).html.join(''),
+  heartPulse: icon(faHeartPulse).html.join(''),
+  graduationCap: icon(faGraduationCap).html.join(''),
+  cameraRetro: icon(faCameraRetro).html.join(''),
+  headphonesSimple: icon(faHeadphonesSimple).html.join(''),
+  film: icon(faFilm).html.join(''),
+  featherPointed: icon(faFeatherPointed).html.join(''),
+  twitter: icon(faTwitter).html.join(''),
+  mastodon: icon(faMastodon).html.join(''),
+  github: icon(faGithub).html.join(''),
+  discord: icon(faDiscord).html.join(''),
+  telegram: icon(faTelegram).html.join(''),
+  envelope: icon(faEnvelope).html.join(''),
+}
+---
+
+<div class="container mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-6 text-center text-sm md:text-base">
+  <div class="mb-6 md:mb-10">
+    <img
+      class="rounded-full transition-all duration-100"
+      src="/images/avatar.webp"
+      alt="Aozaki's avatar"
+      width="120"
+      height="120"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+  <h1 class="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Aozaki ]</h1>
+
+  <div class="bg-[#111729]">
+    <p class="mb-3 wrap-break-word md:mb-8">
+      <Fragment set:html={icons.stethoscope} /> Doctor / <Fragment set:html={icons.heartPulse} />
+      Cardiologist / <Fragment set:html={icons.graduationCap} /> MD
+    </p>
+
+    <p class="mb-3 md:mb-8">
+      <Fragment set:html={icons.cameraRetro} /> Photographer /
+      <Fragment set:html={icons.headphonesSimple} /> Audiophile /
+      <Fragment set:html={icons.film} /> Cinephile
+    </p>
+
+    <p class="">
+      <Fragment set:html={icons.featherPointed} />
+      <a href="https://blog.aozaki.cc/" class="">My Blog</a>
+      <span class="px-2" />
+      <Fragment set:html={icons.twitter} />
+      <a href="https://310.im/x" target="_blank" rel="noopener noreferrer" class="">Twitter</a>
+      <span class="px-2" />
+      <Fragment set:html={icons.mastodon} />
+      <a href="https://310.im/ms" target="_blank" rel="me noopener noreferrer" class="">Mastodon</a>
+      <span class="px-2" />
+      <Fragment set:html={icons.github} />
+      <a href="https://310.im/gh" target="_blank" rel="noopener noreferrer" class="">Github</a>
+    </p>
+  </div>
+
+  <div class="bg-[#111729] text-center">
+    <p class="mt-3 md:mt-8">
+      <Fragment set:html={icons.discord} />
+      <a href="https://310.im/dc" target="_blank" rel="me noopener noreferrer" class="">Discord</a>
+      <span class="px-2" />
+      <Fragment set:html={icons.telegram} />
+      <a href="https://310.im/tg" target="_blank" rel="me noopener noreferrer" class="">Telegram</a>
+    </p>
+
+    <p class="mt-3 md:mt-8">
+      <Fragment set:html={icons.envelope} /> <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
+    </p>
+  </div>
+</div>

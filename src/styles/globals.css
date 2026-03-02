@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+:root {
+  --font-sans: 'Overpass', ui-sans-serif, system-ui, sans-serif;
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -19,8 +23,7 @@
 }
 
 @layer base {
-  a,
-  Link {
+  a {
     @apply border-b border-zinc-300/50 text-inherit no-underline transition-all duration-100 hover:border-zinc-400/90;
   }
 
