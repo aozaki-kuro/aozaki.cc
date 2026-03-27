@@ -18,11 +18,6 @@ export default defineConfig({
             style: 'normal',
           },
           {
-            src: ['@fontsource/overpass/files/overpass-latin-500-normal.woff2'],
-            weight: 500,
-            style: 'normal',
-          },
-          {
             src: ['@fontsource/overpass/files/overpass-latin-800-normal.woff2'],
             weight: 800,
             style: 'normal',
