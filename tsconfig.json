@@ -1,38 +1,32 @@
 {
   "compilerOptions": {
+    "incremental": true,
     "target": "ES2022",
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "inlineSourceMap": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
+    "types": ["node"],
+    "allowJs": true,
     "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
     "noUnusedLocals": false,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "traceResolution": false,
     "listEmittedFiles": false,
     "listFiles": false,
     "pretty": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["node", "astro/client"],
-    "typeRoots": ["./node_modules/@types", "./types"],
+    "importHelpers": true,
+    "inlineSourceMap": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "allowJs": true,
-    "noEmit": true,
-    "incremental": true,
-    "importHelpers": true,
-    "baseUrl": ".",
-    "paths": {
-      "#components/*": ["src/components/*"],
-      "#images/*": ["public/images/*"],
-      "#data/*": ["data/*"]
-    }
+    "skipLibCheck": true
   },
-  "include": ["src/**/*", "**/*.ts", "**/*.astro"],
-  "exclude": ["node_modules", "dist", ".astro", "out", ".next"]
+  "include": [".astro/types.d.ts", "**/*.ts", "**/*.tsx", "**/*.astro"],
+  "exclude": ["node_modules"]
 }

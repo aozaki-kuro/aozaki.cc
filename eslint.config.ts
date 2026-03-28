@@ -1,45 +1,44 @@
-import js from '@eslint/js'
-import { defineConfig, globalIgnores } from 'eslint/config'
-import astroPlugin from 'eslint-plugin-astro'
-import prettierConfigRecommended from 'eslint-plugin-prettier/recommended'
-import globals from 'globals'
-import tseslint from 'typescript-eslint'
+import antfu from '@antfu/eslint-config'
+import betterTailwindcss from 'eslint-plugin-better-tailwindcss'
 
-export default defineConfig([
-  globalIgnores(['.astro/**', '.next/**', 'out/**', 'dist/**', 'build/**', 'node_modules/**']),
+const eslintConfig = antfu({
+  astro: true,
+  typescript: true,
+  test: false,
+  react: false,
+  ignores: ['**/.wrangler/**'],
+  formatters: {
+    /**
+     * Format CSS, LESS, SCSS files, also the `<style>` blocks in Vue
+     * By default uses Prettier
+     */
+    css: true,
+    /**
+     * Format HTML files
+     * By default uses Prettier
+     */
+    html: true,
+    /**
+     * Format Markdown files
+     * Supports Prettier and dprint
+     * By default uses Prettier
+     */
+    // markdown: 'prettier',
+  },
+})
 
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...astroPlugin.configs['flat/recommended'],
-  prettierConfigRecommended,
-
-  {
-    files: ['**/*.{js,mjs,cjs,ts,mts,cts,astro}'],
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-    },
-    rules: {
-      eqeqeq: ['error', 'always', { null: 'ignore' }],
-      curly: ['error', 'all'],
-      'no-console': ['warn', { allow: ['warn', 'error'] }],
-      '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports' }],
-      '@typescript-eslint/no-unused-vars': [
-        'warn',
-        {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
-      ],
+eslintConfig.append({
+  plugins: {
+    'better-tailwindcss': betterTailwindcss,
+  },
+  settings: {
+    'better-tailwindcss': {
+      entryPoint: 'src/styles/globals.css',
     },
   },
-  {
-    files: ['**/*.astro'],
-    rules: {
-      'prettier/prettier': 'off',
-    },
+  rules: {
+    ...betterTailwindcss.configs.recommended.rules,
   },
-])
+})
+
+export default eslintConfig

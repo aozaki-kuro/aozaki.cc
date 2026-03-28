@@ -29,9 +29,8 @@
   }
 }
 
-.dotback2 {
-  background-image:
-    radial-gradient(#e2c48d6c 1%, transparent 0), radial-gradient(#e2c48d6c 1%, transparent 0);
+@utility dotback2 {
+  background-image: radial-gradient(#e2c48d6c 1%, transparent 0), radial-gradient(#e2c48d6c 1%, transparent 0);
   background-size: 80px 80px;
   background-position:
     0 0,

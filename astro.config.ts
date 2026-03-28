@@ -1,5 +1,5 @@
-import { defineConfig, fontProviders } from 'astro/config'
 import icon from 'astro-icon'
+import { defineConfig, fontProviders } from 'astro/config'
 
 export default defineConfig({
   outDir: 'dist',
