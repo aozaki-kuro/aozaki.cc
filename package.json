@@ -2,13 +2,13 @@
   "name": "aozaki.cc",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
     "build": "astro build",
-    "start": "astro preview",
-    "prod": "astro build",
-    "lint": "eslint --fix",
+    "deploy": "bun run prod ; wrangler deploy",
+    "dev": "astro dev",
     "hooks:install": "prek install",
-    "deploy": "bun run prod ; wrangler deploy"
+    "lint": "eslint --fix",
+    "prod": "astro build",
+    "start": "astro preview"
   },
   "dependencies": {
     "@fontsource/overpass": "^5.2.8",
