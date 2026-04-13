@@ -17,7 +17,7 @@
     "astro-icon": "^1.1.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.7.3",
+    "@antfu/eslint-config": "^8.0.0",
     "@j178/prek": "^0.3.8",
     "@tailwindcss/vite": "^4.2.2",
     "@types/node": "^25.5.0",
