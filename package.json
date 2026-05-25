@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "astro build",
-    "deploy": "bun run prod ; wrangler deploy",
+    "deploy": "astro build ; wrangler deploy",
     "dev": "astro dev",
     "hooks:install": "prek install",
     "lint": "eslint --fix",
@@ -18,21 +18,21 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.7.3",
-    "@j178/prek": "^0.3.8",
-    "@tailwindcss/vite": "^4.2.2",
-    "@types/node": "^25.5.0",
-    "astro": "^6.1.1",
-    "eslint": "^10.1.0",
-    "eslint-plugin-astro": "^1.6.0",
-    "eslint-plugin-better-tailwindcss": "^4.3.2",
+    "@j178/prek": "^0.3.13",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^25.9.1",
+    "astro": "^6.3.7",
+    "eslint": "^10.4.0",
+    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-better-tailwindcss": "^4.5.0",
     "eslint-plugin-format": "^2.0.1",
-    "globals": "^17.4.0",
+    "globals": "^17.6.0",
     "lint-staged": "^16.4.0",
-    "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.2",
-    "typescript": "^6.0.2",
-    "typescript-eslint": "^8.57.2",
-    "wrangler": "^4.78.0"
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.4",
+    "wrangler": "^4.94.0"
   },
   "lint-staged": {
     "*.{js,mjs,cjs,jsx,ts,tsx}": [
