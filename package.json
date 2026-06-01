@@ -35,11 +35,11 @@
     "wrangler": "^4.94.0"
   },
   "lint-staged": {
-    "*.{js,mjs,cjs,jsx,ts,tsx}": [
-      "bun lint"
-    ],
-    "*.{json,css,md,mdx,jsonc}": [
-      "bun prettier --write"
-    ]
+      "*.{js,mjs,cjs,jsx,ts,tsx}": [
+        "pnpm lint"
+      ],
+      "*.{json,css,md,mdx,jsonc}": [
+        "pnpm prettier --write"
+      ]
   }
 }

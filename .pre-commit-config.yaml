@@ -6,8 +6,8 @@ repos:
   - repo: local
     hooks:
       - id: bun-install
-        name: bun install (frozen)
-        entry: bun install --frozen-lockfile
+        name: pnpm install (frozen)
+        entry: pnpm install --frozen-lockfile
         language: system
         pass_filenames: false
         stages:
@@ -16,7 +16,7 @@ repos:
 
       - id: lint-staged
         name: lint staged
-        entry: bun lint-staged
+        entry: pnpm lint-staged
         language: system
         pass_filenames: false
         stages:
