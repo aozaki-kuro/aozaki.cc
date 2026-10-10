@@ -12,6 +12,9 @@ export default defineConfig({
   build: {
     inlineStylesheets: 'always',
   },
+  // Astro 7 defaults to 'jsx', which drops line-break whitespace between
+  // inline elements and glues the icons to their labels.
+  compressHTML: true,
   integrations: [icon()],
 
   fonts: [
