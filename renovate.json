@@ -54,6 +54,11 @@
       "groupName": "typescript tooling"
     },
     {
+      "description": "typescript-eslint 与 astro check 尚不支持 TS 7，暂时钉在 6.x",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
+    },
+    {
       "matchCurrentVersion": "!/^0/",
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
