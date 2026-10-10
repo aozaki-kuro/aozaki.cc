@@ -18,6 +18,7 @@ const iconClass = 'inline-block h-[1em] align-[-0.125em] overflow-visible'
     <img
       class="rounded-full transition-all duration-100"
       src="/images/avatar.webp"
+      srcset="/images/avatar-120.webp 1x, /images/avatar.webp 2x"
       alt="Aozaki's avatar"
       width="120"
       height="120"
@@ -38,11 +39,12 @@ const iconClass = 'inline-block h-[1em] align-[-0.125em] overflow-visible'
       md:mb-8
     "
     >
-      <Icon name="fa6-solid:stethoscope" class={iconClass} /> Doctor / <Icon
+      <Icon name="fa6-solid:stethoscope" class={iconClass} aria-hidden="true" /> Doctor / <Icon
         name="fa6-solid:heart-pulse"
         class={iconClass}
-                                                                       />
-      Cardiologist / <Icon name="fa6-solid:graduation-cap" class={iconClass} /> MD
+        aria-hidden="true"
+                                                                                          />
+      Cardiologist / <Icon name="fa6-solid:graduation-cap" class={iconClass} aria-hidden="true" /> MD
     </p>
 
     <p class="
@@ -50,22 +52,22 @@ const iconClass = 'inline-block h-[1em] align-[-0.125em] overflow-visible'
       md:mb-8
     "
     >
-      <Icon name="fa6-solid:camera-retro" class={iconClass} /> Photographer /
-      <Icon name="fa6-solid:headphones-simple" class={iconClass} /> Audiophile /
-      <Icon name="fa6-solid:film" class={iconClass} /> Cinephile
+      <Icon name="fa6-solid:camera-retro" class={iconClass} aria-hidden="true" /> Photographer /
+      <Icon name="fa6-solid:headphones-simple" class={iconClass} aria-hidden="true" /> Audiophile /
+      <Icon name="fa6-solid:film" class={iconClass} aria-hidden="true" /> Cinephile
     </p>
 
     <p class="">
-      <Icon name="fa6-solid:feather-pointed" class={iconClass} />
+      <Icon name="fa6-solid:feather-pointed" class={iconClass} aria-hidden="true" />
       <a href="https://blog.aozaki.cc/" class="">My Blog</a>
       <span class="px-2" />
-      <Icon name="fa6-brands:twitter" class={iconClass} />
+      <Icon name="fa6-brands:twitter" class={iconClass} aria-hidden="true" />
       <a href="https://310.im/x" target="_blank" rel="noopener noreferrer" class="">Twitter</a>
       <span class="px-2" />
-      <Icon name="fa6-brands:mastodon" class={iconClass} />
+      <Icon name="fa6-brands:mastodon" class={iconClass} aria-hidden="true" />
       <a href="https://310.im/ms" target="_blank" rel="me noopener noreferrer" class="">Mastodon</a>
       <span class="px-2" />
-      <Icon name="fa6-brands:github" class={iconClass} />
+      <Icon name="fa6-brands:github" class={iconClass} aria-hidden="true" />
       <a href="https://310.im/gh" target="_blank" rel="noopener noreferrer" class="">Github</a>
     </p>
   </div>
@@ -76,10 +78,10 @@ const iconClass = 'inline-block h-[1em] align-[-0.125em] overflow-visible'
       md:mt-8
     "
     >
-      <Icon name="fa6-brands:discord" class={iconClass} />
+      <Icon name="fa6-brands:discord" class={iconClass} aria-hidden="true" />
       <a href="https://310.im/dc" target="_blank" rel="me noopener noreferrer" class="">Discord</a>
       <span class="px-2" />
-      <Icon name="fa6-brands:telegram" class={iconClass} />
+      <Icon name="fa6-brands:telegram" class={iconClass} aria-hidden="true" />
       <a href="https://310.im/tg" target="_blank" rel="me noopener noreferrer" class="">Telegram</a>
     </p>
 
@@ -88,7 +90,7 @@ const iconClass = 'inline-block h-[1em] align-[-0.125em] overflow-visible'
       md:mt-8
     "
     >
-      <Icon name="fa6-solid:envelope" class={iconClass} /> <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
+      <Icon name="fa6-solid:envelope" class={iconClass} aria-hidden="true" /> <a href="mailto:i@aozaki.cc">i#aozaki.cc</a>
     </p>
   </div>
 </main>

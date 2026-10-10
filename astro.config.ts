@@ -7,6 +7,11 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   outDir: 'dist',
+  // Single page, so a separate stylesheet buys no cross-page caching and only
+  // adds a render-blocking request in front of the avatar (the LCP element).
+  build: {
+    inlineStylesheets: 'always',
+  },
   integrations: [icon()],
 
   fonts: [

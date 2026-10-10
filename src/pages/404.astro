@@ -1,0 +1,51 @@
+---
+import { Font } from 'astro:assets'
+
+import Footer from '../components/Footer.astro'
+
+import '../styles/globals.css'
+
+const site = 'Aozaki'
+---
+
+<!doctype html>
+<html lang="en" class="font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>404 · {site}</title>
+    <meta name="robots" content="noindex" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <Font cssVariable="--font-sans" preload />
+    <style>html { background-color: #111729 }</style>
+
+    <script defer src="https://sight.aozaki.cc/api/script.js" data-site-id="1211d1a9e1b3"></script>
+  </head>
+  <body class="
+    box-border flex min-h-dvh flex-col bg-[#111729] dotback2 tracking-tight
+    antialiased
+    selection:bg-sky-600/20
+    md:tracking-normal
+  "
+  >
+    <main class="
+      container mx-auto flex max-w-3xl flex-1 flex-col items-center
+      justify-center px-6 text-center text-sm
+      md:text-base
+    "
+    >
+      <h1 class="
+        mb-6 text-3xl font-bold text-zinc-200
+        md:mb-8 md:text-4xl
+      "
+      >[ 404 ]</h1>
+      <p class="mb-3">This page doesn't exist.</p>
+      <p><a href="/">Back to {site}</a></p>
+    </main>
+    <Footer />
+  </body>
+</html>
