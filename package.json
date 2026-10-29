@@ -17,22 +17,22 @@
     "astro-icon": "^1.2.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^9.5.1",
-    "@j178/prek": "^0.5.5",
+    "@antfu/eslint-config": "^10.0.0",
+    "@j178/prek": "^0.5.7",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/node": "^26.6.4",
-    "astro": "^7.3.8",
-    "eslint": "^10.12.0",
+    "@types/node": "^26.6.5",
+    "astro": "^7.4.2",
+    "eslint": "^10.13.0",
     "eslint-plugin-astro": "^3.2.1",
-    "eslint-plugin-better-tailwindcss": "^4.9.0",
+    "eslint-plugin-better-tailwindcss": "^4.10.0",
     "eslint-plugin-format": "^2.0.1",
     "globals": "^17.13.0",
     "lint-staged": "^17.6.0",
-    "postcss": "^8.5.29",
+    "postcss": "^8.5.32",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.1",
-    "wrangler": "^4.149.0"
+    "typescript-eslint": "^8.72.1",
+    "wrangler": "^4.154.0"
   },
   "lint-staged": {
     "*.{js,mjs,cjs,jsx,ts,tsx}": [
