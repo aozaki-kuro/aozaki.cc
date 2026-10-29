@@ -4,7 +4,9 @@ import { defineConfig, fontProviders } from 'astro/config'
 
 export default defineConfig({
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [
+      tailwindcss(),
+    ],
   },
   outDir: 'dist',
   // Single page, so a separate stylesheet buys no cross-page caching and only
@@ -15,7 +17,9 @@ export default defineConfig({
   // Astro 7 defaults to 'jsx', which drops line-break whitespace between
   // inline elements and glues the icons to their labels.
   compressHTML: true,
-  integrations: [icon()],
+  integrations: [
+    icon(),
+  ],
 
   fonts: [
     {
