@@ -17,3 +17,5 @@ Personal profile site — purely static, deployed as a Cloudflare Worker (servin
 - `compressHTML: true` in `astro.config.ts` restores pre-v7 whitespace handling; Astro 7's default `'jsx'` strips line-break whitespace between inline elements, so every icon/label pair split across lines in `Main.astro` loses its space
 - `src/icons/` (only a `.gitkeep`) must exist: astro-icon ≥1.2 warns on every build if the local icon dir is missing, even though only the fa6 iconify sets are used
 - `pnpm-workspace.yaml` settings (`trustPolicy`, `minimumReleaseAgeExcludePrune`, `shellEmulator`) are enforced by `@antfu/eslint-config` ≥9; use `npx eslint . --fix` rather than editing by hand
+- The pnpm policy mirrors the sibling `commission-index` repo: `trustPolicyIgnoreAfter` limits the trust check to packages published in the last 2 weeks, and `tinyexec` (pulled in by `@antfu/eslint-config`) is excluded as a known cross-major provenance false positive
+- `packageManager` pins pnpm; pnpm 12 records it as a separate first YAML document in `pnpm-lock.yaml`, so keep that block when the lockfile changes and recheck with `pnpm install --frozen-lockfile`
