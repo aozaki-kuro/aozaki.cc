@@ -1,6 +1,7 @@
 {
   "name": "aozaki.cc",
   "private": true,
+  "packageManager": "pnpm@12.16.1",
   "scripts": {
     "build": "astro build",
     "deploy": "astro build && wrangler deploy",
